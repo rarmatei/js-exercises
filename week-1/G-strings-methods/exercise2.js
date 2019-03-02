@@ -1,3 +1,4 @@
-var name = " Daniel  ";
+var name = " Moahmed Ali  ";
+var namelowercase = name.toLowerCase();
 
-console.log(message);
+console.log(namelowercase);
