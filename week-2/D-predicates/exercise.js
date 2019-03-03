@@ -21,6 +21,11 @@ console.log("The number in test is " + number);
 console.log("Is the number negative? " + numberNegative);
 console.log("Is the number between 0 and 10? " + numberBetweenZeroAnd10);
 
+module.exports = {
+  isNegative,
+  isBetweenZeroAnd10
+};
+
 /* 
   EXPECTED RESULT
   ---------------
