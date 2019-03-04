@@ -33,6 +33,6 @@ module.exports = {
   Is -10 is a negative number? true
   Is 5 a negative number? false
   Is 10 in the range 5-10? true
-  Is Daniel a short name? true
+  Is 'Daniel' less than 8 characters long? true
   Does Daniel start with 'D'?
 */
