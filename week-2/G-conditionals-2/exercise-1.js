@@ -19,6 +19,10 @@ console.log(number1 + " is " + negativeOrPositive(number1));
 console.log(number2 + " is " + negativeOrPositive(number2));
 console.log(number3 + " is " + negativeOrPositive(number3));
 
+module.exports = {
+  negativeOrPositive
+};
+
 /* 
   EXPECTED RESULT
   ---------------
