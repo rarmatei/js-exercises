@@ -9,6 +9,15 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+// Write your code here
+
+/* 
+  DO NOT EDIT BELOW THIS LINE
+  --------------------------- */
+module.exports = {
+  danielsRole
+};
+
 /* 
 EXPECTED RESULT
 ---------------
