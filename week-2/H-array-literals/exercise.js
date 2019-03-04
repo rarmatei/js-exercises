@@ -13,9 +13,14 @@ var mentors; // Create an array with the names of 4 mentors
 console.log(numbers);
 console.log(mentors);
 
+module.exports = {
+  numbers,
+  mentors
+};
+
 /* 
   EXPECTED RESULT
   ---------------
   [1,2,3,4,5,6,7,8,9,10]
-  ['Daniel', 'Irina', 'Rares']
+  ['Daniel', 'Irina', 'Rares', 'Nate']
 */
