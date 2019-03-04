@@ -1,14 +1,11 @@
-const {
-  isNegative,
-  isBetweenZeroAnd10
-} = require("../../week-2/D-predicates/exercise");
+const { isNegative, isBelow9 } = require("../../week-2/D-predicates/exercise");
 
 test("'isNegative' is a predicate", () => {
   expect(typeof isNegative(2)).toBe("boolean");
 });
 
-test("'isBetweenZeroAnd10' is a predicate", () => {
-  expect(typeof isBetweenZeroAnd10(2)).toBe("boolean");
+test("'isBelow9' is a predicate", () => {
+  expect(typeof isBelow9(2)).toBe("boolean");
 });
 
 test("'isNegative' returns true when number is negative", () => {
@@ -23,14 +20,14 @@ test("'isNegative' returns true when number is negative", () => {
   }
 });
 
-test("'isBetweenZeroAnd10' returns true when number is between 0 and 10", () => {
+test("'isBelow9' returns true when number is below 9", () => {
   const getRandomNum = () => {
-    return Math.floor(Math.random() * 51) - 10;
+    return Math.floor(Math.random() * 51) - 5;
   };
 
   for (let i = 0; i < 51; i++) {
     const randomNum = getRandomNum();
-    const correctResult = randomNum > 0 && randomNum < 10;
-    expect(isBetweenZeroAnd10(randomNum)).toBe(correctResult);
+    const correctResult = randomNum < 9;
+    expect(isBelow9(randomNum)).toBe(correctResult);
   }
 });
