@@ -23,6 +23,10 @@ console.log("'" + grade2 + "': " + calculateGrade(grade2));
 console.log("'" + grade3 + "': " + calculateGrade(grade3));
 console.log("'" + grade4 + "': " + calculateGrade(grade4));
 
+module.exports = {
+  calculateGrade
+};
+
 /* 
   EXPECTED RESULT
   ---------------
