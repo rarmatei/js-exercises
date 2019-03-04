@@ -14,8 +14,18 @@ function isNegative() {}
 console.log("Is -10 is a negative number?", isNegative(-10));
 console.log("Is 5 a negative number?", isNegative(5));
 console.log("Is 10 in the range 5-10?", isBetween5and10(10));
-console.log("Is Daniel a short name?", isShortName("Daniel"));
+console.log(
+  "Is 'Daniel' less than 8 characters long?",
+  isLessThan8Characters("Daniel")
+);
 console.log("Does Daniel start with 'D'?", startsWithD("Daniel"));
+
+module.exports = {
+  isNegative,
+  isBetween5and10,
+  isLessThan8Characters,
+  startsWithD
+};
 
 /* 
   EXPECTED RESULT
