@@ -21,6 +21,11 @@ var names = ["Irina", "Ashleigh", "Mozafar"];
 console.log(first(numbers));
 console.log(last(names));
 
+module.exports = {
+  first,
+  last
+};
+
 /* 
   EXPECTED RESULT
   ---------------
