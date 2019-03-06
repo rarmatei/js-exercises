@@ -1,7 +1,7 @@
 /*
   Array methods - .map()
   -------------------------
-  `numbersDoubled` should be an array containing all every value in `numbers` doubled
+  `numbersDoubled` should be an array containing doubled values of each number in `numbers`
   Use the .map() method to transform each item in the array
 */
 
@@ -16,6 +16,10 @@ var numbersDoubled; // complete this statement (use map and the double function)
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 console.log(numbersDoubled);
+
+module.exports = {
+  numbersDoubled
+};
 
 /* 
   EXPECTED RESULT
