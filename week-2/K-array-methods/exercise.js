@@ -12,6 +12,11 @@ var sortedNumbers; // complete this statement
 
 console.log(sortedNumbers);
 
+module.exports = {
+  numbers,
+  sortedNumbers
+};
+
 /* 
   EXPECTED RESULT
   ---------------
