@@ -17,6 +17,11 @@ console.log(isInUk("France"));
 console.log(isInUk("Republic of Ireland"));
 console.log(isInUk("England"));
 
+module.exports = {
+  ukNations,
+  isInUk
+};
+
 /* 
   EXPECTED RESULT
   ---------------
