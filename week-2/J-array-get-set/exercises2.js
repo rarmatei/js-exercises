@@ -13,6 +13,10 @@ var numbers = [2, 2, 3]; // Don't change this array literal declaration
   --------------------------- */
 console.log(numbers);
 
+module.exports = {
+  numbers
+};
+
 /* 
   EXPECTED RESULT
   ---------------
