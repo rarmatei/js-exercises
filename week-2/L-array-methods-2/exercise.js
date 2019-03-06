@@ -25,6 +25,12 @@ var lastFive; // complete this statement
 console.log(firstFive);
 console.log(lastFive);
 
+module.exports = {
+  everyone,
+  firstFive,
+  lastFive
+};
+
 /* 
   EXPECTED RESULT
   ---------------
