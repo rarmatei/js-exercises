@@ -4,3 +4,4 @@ var name = "Youssef";
 var greeting = greetingstart + name;
 
 console.log(greeting);
+console.log(greetingstart + name);
