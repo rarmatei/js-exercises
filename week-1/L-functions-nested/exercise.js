@@ -11,11 +11,7 @@ console.log(createMessage(15, 8, "students"));
 console.log(createMessage(8, 15, "mentors"));
 
 //exercise 2
-function greeting(gr) {
-  var hello = "Hello";
-  return hello.toUpperCase();
-}
-function nameUpperCase(name) {
+function mentor(name) {
   return name.toUpperCase();
 }
 var mentor1 = "Daniel";
@@ -24,8 +20,12 @@ var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
-console.log(geeting) + nameUpperCase(mentor1);
-console.log(geeting) + nameUpperCase(mentor2);
-console.log(geeting) + nameUpperCase(mentor3);
-console.log(geeting) + nameUpperCase(mentor4);
-console.log(geeting) + nameUpperCase(mentor5);
+function greeting() {
+  return "HELLO ";
+}
+
+console.log(greeting() + mentor(mentor1));
+console.log(greeting() + mentor(mentor2));
+console.log(greeting() + mentor(mentor3));
+console.log(greeting() + mentor(mentor4));
+console.log(greeting() + mentor(mentor5));
