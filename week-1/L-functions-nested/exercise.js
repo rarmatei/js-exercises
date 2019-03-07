@@ -1,3 +1,4 @@
+
 //exercise 1
 
 function Percentage(students, mentors) {
@@ -29,3 +30,4 @@ console.log(greeting() + mentor(mentor2));
 console.log(greeting() + mentor(mentor3));
 console.log(greeting() + mentor(mentor4));
 console.log(greeting() + mentor(mentor5));
+

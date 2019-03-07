@@ -4,7 +4,8 @@
   "description": "JavaScript exercises for Code Your Future students",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch --silent --noStackTrace",
+    "precommit": "pretty-quick --staged --verbose"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/CodeYourFuture/js-exercises/issues"
   },
-  "homepage": "https://github.com/CodeYourFuture/js-exercises#readme"
+  "homepage": "https://github.com/CodeYourFuture/js-exercises#readme",
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "jest-dot-reporter": "^1.0.7",
+    "husky": "^0.14.3",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0"
+  }
 }

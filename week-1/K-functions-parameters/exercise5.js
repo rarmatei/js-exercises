@@ -5,3 +5,7 @@ function createLongGreeting(name, age) {
 var greeting = createLongGreeting("Daniel", 30);
 
 console.log(greeting);
+
+// ignore below
+
+module.exports = { createLongGreeting };
