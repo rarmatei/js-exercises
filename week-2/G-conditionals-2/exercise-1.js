@@ -8,7 +8,8 @@
 
 function negativeOrPositive(number) {}
 
-/* 
+/*
+  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var number1 = 5;

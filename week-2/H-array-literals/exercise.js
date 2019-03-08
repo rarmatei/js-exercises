@@ -8,6 +8,7 @@ var numbers = []; // add numbers from 1 to 10 into this array
 var mentors; // Create an array with the names of 4 mentors
 
 /* 
+  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 console.log(numbers);

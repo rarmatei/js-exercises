@@ -12,6 +12,7 @@ function isNegative(number) {}
 function isBelow9(number) {}
 
 /* 
+  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var number = 5;

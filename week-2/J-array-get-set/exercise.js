@@ -13,6 +13,7 @@ function last(arr) {
 }
 
 /* 
+  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var numbers = [1, 2, 3];

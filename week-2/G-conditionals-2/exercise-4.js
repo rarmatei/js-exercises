@@ -11,8 +11,9 @@
 function containsCode(sentence) {}
 
 /* 
-DO NOT EDIT BELOW THIS LINE
---------------------------- */
+  PLEASE IGNORE LINES BELOW
+  DO NOT EDIT BELOW THIS LINE
+  --------------------------- */
 var sentence1 = "code your future";
 var sentence2 = "draw your future";
 var sentence3 = "design your future";

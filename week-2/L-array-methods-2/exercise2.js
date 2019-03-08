@@ -10,6 +10,7 @@
 function capitalise(str) {}
 
 /* 
+  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var name = "daniel";

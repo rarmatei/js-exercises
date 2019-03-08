@@ -11,8 +11,9 @@
 function calculateGrade(mark) {}
 
 /* 
-DO NOT EDIT BELOW THIS LINE
---------------------------- */
+  PLEASE IGNORE LINES BELOW
+  DO NOT EDIT BELOW THIS LINE
+  --------------------------- */
 var grade1 = 49;
 var grade2 = 90;
 var grade3 = 70;

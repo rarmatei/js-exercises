@@ -9,7 +9,8 @@ function isEmpty(arr) {
   return; // complete this statement
 }
 
-/* 
+/*
+  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var numbers = [1, 2, 3];

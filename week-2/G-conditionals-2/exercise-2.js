@@ -10,8 +10,9 @@
 function studentPassed(grade) {}
 
 /* 
-DO NOT EDIT BELOW THIS LINE
---------------------------- */
+  PLEASE IGNORE LINES BELOW
+  DO NOT EDIT BELOW THIS LINE
+  ---------------------------*/
 var grade1 = 49;
 var grade2 = 50;
 var grade3 = 100;
