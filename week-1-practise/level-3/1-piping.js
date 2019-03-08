@@ -11,6 +11,7 @@
 */
 
 var startingValue = 5;
+var result = format(multiply(add(startingValue, 10), 2));
 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
