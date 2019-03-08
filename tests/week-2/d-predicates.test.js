@@ -8,7 +8,7 @@ test("'isBelow9' is a predicate", () => {
   expect(typeof isBelow9(2)).toBe("boolean");
 });
 
-test("'isNegative' returns true when number is negative", () => {
+test("'isNegative' returns 'true' when number is negative; 'false' when number is zero or higher", () => {
   const getRandomNum = () => {
     return Math.floor(Math.random() * 21) - 10;
   };
@@ -20,7 +20,7 @@ test("'isNegative' returns true when number is negative", () => {
   }
 });
 
-test("'isBelow9' returns true when number is below 9", () => {
+test("'isBelow9' returns 'true' when number is below 9; 'false' when number is 9 or higher", () => {
   const getRandomNum = () => {
     return Math.floor(Math.random() * 51) - 5;
   };
