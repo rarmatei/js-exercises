@@ -22,6 +22,12 @@ test("Comparison statement is written correctly for 'enoughSpaceInRoom'", () => 
     ) ||
     !!contents.match(
       /enoughSpaceInRoom\s*=\s*roomMaxCapacity\s*>=?\s*mentorCount\s*\+\s*studentCount/
+    ) ||
+    !!contents.match(
+      /enoughSpaceInRoom\s*=\s*studentCount\s*\+\s*mentorCount\s*<=?roomMaxCapacity/
+    ) ||
+    !!contents.match(
+      /enoughSpaceInRoom\s*=\s*mentorCount\s*\+\s*studentCount\s*<=?roomMaxCapacity/
     );
   expect(hasCorrectKeywords).toBe(true);
 });
