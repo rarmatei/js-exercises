@@ -10,10 +10,9 @@ function Mentors() {
   return (numberOfMentors / total) * 100;
 }
 
-var StudentP = Students();
-var MentorP = Mentors();
-
 function result() {
+  var StudentP = Students();
+  var MentorP = Mentors();
   console.log("Percentage Students : " + Math.round(StudentP) + "%");
   console.log("Percentage Mentors  : " + Math.round(MentorP) + "%");
 }
