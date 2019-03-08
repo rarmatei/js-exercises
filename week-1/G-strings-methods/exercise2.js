@@ -1,8 +1,9 @@
-var name = "Blaise    ";
-var mynamelenght = name.length;
+var name = "Daniel    ";
+var nametrim = name.trimRight();
+var mynamelenght = nametrim.length;
 console.log(
   "My name is " +
-    name.trimRight() +
+    nametrim +
     " and my name is " +
     mynamelenght +
     " characters long"
