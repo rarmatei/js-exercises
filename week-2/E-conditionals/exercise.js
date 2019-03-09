@@ -7,7 +7,14 @@
 */
 
 var name = "Daniel";
-var danielsRole = "mentor";
+var danielsRole = "student";
+var otherdanielrole = "student";
+
+if (danielsRole === "mentor") {
+  console.log("Hi, I'm " + name + ", I'm a " + danielsRole);
+} else {
+  console.log("Hi, I'm " + name + ", I'm a " + otherdanielrole);
+}
 
 /* 
 EXPECTED RESULT
