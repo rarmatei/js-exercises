@@ -5,8 +5,12 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
+function isEmpty(numbers) {
+  return numbers.length === 0; // complete this statement
+}
+
+function isEmpty(names) {
+  return names.length === 0; // complete this statement
 }
 
 /* 
