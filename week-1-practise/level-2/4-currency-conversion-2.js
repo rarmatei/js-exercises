@@ -7,8 +7,14 @@
   Find a way to add 1% to all currency conversions (think about the DRY principle)
 */
 
-function convertToUSD(price) {}
-function convertToBRL(price) {}
+function convertToUSD(price) {
+  var result = price * 1.4 + 0.01 + " $ ";
+  return result;
+}
+function convertToBRL(price) {
+  var result = price * 1.4 + " B$";
+  return result;
+}
 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
