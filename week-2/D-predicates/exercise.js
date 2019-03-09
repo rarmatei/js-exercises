@@ -9,12 +9,10 @@
 function isNegative(number) {
   return number < 0;
 }
-var number =5;
 // Finish the predicate function to test if the passed number is below 9
 function isBelow9(number) {
-  return number > 0;
+  return number < 9;
 }
- var number = 5;
 /* 
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
