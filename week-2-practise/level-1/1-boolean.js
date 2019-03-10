@@ -1,7 +1,8 @@
 // The code is valid but the program does not produce the expected result
 // Fix it.
 
-var isHappy = false;
+//assign the value os is happy to true
+var isHappy = true;
 
 if (isHappy) {
   console.log("I am happy");

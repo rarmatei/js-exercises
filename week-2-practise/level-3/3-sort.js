@@ -1,10 +1,17 @@
 // 1. Update the variable `sortedNums`.
 // It should contain the values of `nums` and `nums2` in ascending order
 // Tip: you might need to read the documentation for .sort (search "mdn array sort")
-
+function comapre(element1, element2) {
+  return element1 - element2;
+}
 var nums = [10, 1, 5, 29, 100];
 var nums2 = [11, 6, 3, 29, 12];
-var sortedNums; // complete this statement
+
+//copy orignal array to a new array
+var newArrayNums = nums.slice();
+var newArrayNums2 = nums2.slice();
+
+var sortedNums = newArrayNums.concat(newArrayNums2).sort(comapre); // complete this statement
 
 console.log(sortedNums);
 
