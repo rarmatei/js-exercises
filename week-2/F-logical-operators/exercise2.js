@@ -10,7 +10,7 @@ function isNegative(number) {
 }
 
 function isBetween5and10(number) {
-  return number > 5 && number < 10;
+  return number >= 5 && number <= 10;
 }
 
 function isLessThan8Characters(name) {
