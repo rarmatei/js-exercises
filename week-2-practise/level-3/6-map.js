@@ -15,7 +15,7 @@ function captialise(str) {
 }
 
 var mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];
-var mentorsTidyAndCapitalised;
+var mentorsTidyAndCapitalised = mentors.map(tidyUpString);
 
 console.log(mentorsTidyAndCapitalised);
 
