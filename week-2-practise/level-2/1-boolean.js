@@ -1,8 +1,9 @@
 // The code is valid but the program does not produce the expected result
 // Why doesn't it work?
+// boolean values don't need quotation marks
 // Fix it.
 
-var isHappy = "false";
+var isHappy = false;
 
 if (isHappy) {
   console.log("I am happy");
