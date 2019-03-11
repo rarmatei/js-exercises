@@ -7,7 +7,7 @@
 var excludedNums = [6, 14, 91, 111];
 
 function validate(num) {
-  return isInt(num) && isNotEqualToExecludedNumsArray(num);
+  return isInt(num) && isNotEqualToExcludedNumsArray(num);
 }
 
 function isInt(number) {
@@ -18,7 +18,7 @@ function isInt(number) {
   );
 }
 
-function isNotEqualToExecludedNumsArray(number) {
+function isNotEqualToExcludedNumsArray(number) {
   return number !== excludedNums.includes(number);
 }
 
