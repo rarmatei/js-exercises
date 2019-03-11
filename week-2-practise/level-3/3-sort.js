@@ -2,7 +2,8 @@
 // It should contain the values of `nums` and `nums2` in ascending order
 // Tip: you might need to read the documentation for .sort (search "mdn array sort")
 function comapre(element1, element2) {
-  return element1 - element2;
+  return element1 > element2;
+  //return element1 - element2;
 }
 var nums = [10, 1, 5, 29, 100];
 var nums2 = [11, 6, 3, 29, 12];
