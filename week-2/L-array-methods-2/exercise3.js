@@ -6,11 +6,11 @@
 
 var ukNations = ["Scotland", "Wales", "England", "Northern Ireland"];
 
-function isInUK(country) {
-  return; // complete this statement
+function isInUk(country) {
+  return ukNations.includes(country); // complete this statement
 }
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -23,7 +23,7 @@ module.exports = {
   isInUk
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   false
