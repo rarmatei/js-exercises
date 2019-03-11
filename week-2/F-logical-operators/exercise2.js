@@ -5,9 +5,20 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  return number < 0;
+}
+function isBetween5and10(number) {
+  return number >= 5 && number <= 10;
+}
+function isLessThan8Characters(name) {
+  return name.length < 8;
+}
+function startsWithD(name) {
+  return name.startsWith("D");
+}
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -28,7 +39,7 @@ module.exports = {
   startsWithD
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   Is -10 is a negative number? true
