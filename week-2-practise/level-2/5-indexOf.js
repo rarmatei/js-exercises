@@ -5,7 +5,9 @@
 // TIP: Use the .indexOf() method
 
 function remove(arr, valueToRemove) {
-  return; // complete this statement
+  return arr
+    .slice(0, indexOf(valueToRemove))
+    .concat(arr.slice(indexOf(valueToRemove) + 1, arr.length));
 }
 
 /* 
