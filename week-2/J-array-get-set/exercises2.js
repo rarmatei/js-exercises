@@ -6,9 +6,13 @@
   - change the first value in the array to the number 1
 */
 
-var numbers = [2, 2, 3]; // Don't change this array literal declaration
+var numbers = [2, 2, 3];
+numbers[0] = 1;
+numbers[3] = 4;
+//numbers.concat(4);
+// Don't change this array literal declaration
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -18,7 +22,7 @@ module.exports = {
   numbers
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   [1, 2, 3, 4]

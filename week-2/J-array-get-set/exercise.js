@@ -5,14 +5,16 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  var firstArrayElement = arr[0];
+  return firstArrayElement; // complete this statement
 }
-
+arr.length;
 function last(arr) {
-  return; // complete this statement
+  var lastArrayElement = arr[2];
+  return lastArrayElement; // complete this statement
 }
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -27,7 +29,7 @@ module.exports = {
   last
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   1
