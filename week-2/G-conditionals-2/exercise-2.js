@@ -7,7 +7,10 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  if (grade < 50) return "fail";
+  else return "pass";
+}
 
 /* 
   PLEASE IGNORE LINES BELOW
