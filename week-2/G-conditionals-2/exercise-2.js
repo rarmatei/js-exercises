@@ -8,8 +8,11 @@
 */
 
 function studentPassed(grade) {
-  if (grade < 50) return "fail";
-  else return "pass";
+  if (grade < 50) {
+    return "fail";
+  } else {
+    return "pass";
+  }
 }
 
 /* 
