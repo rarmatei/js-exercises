@@ -3,9 +3,9 @@
 var name = "Daniel";
 
 console.log(
-  "My name is " + name + " and my name is " + name.lenght + "characters long"
+  "My name is " + name + " and my name is " + name.length + " characters long"
 );
 
 
-console.log(name);
+
 
