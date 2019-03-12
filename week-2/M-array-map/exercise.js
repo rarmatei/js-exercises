@@ -6,11 +6,11 @@
 */
 
 function double(num) {
-  return num * 2;
+  return numbersDoubled;
 }
 
 var numbers = [1, 2, 3, 4];
-var numbersDoubled; // complete this statement (use map and the double function)
+var numbersDoubled = numbers.map(num => num * 2); // complete this statement (use map and the double function)
 
 /* 
   PLEASE IGNORE LINES BELOW
