@@ -5,8 +5,18 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
-
+function isNegative(number) {
+  return number < 0;
+}
+function isBetween5and10(number) {
+  return number >= 5 && number <= 10;
+}
+function isLessThan8Characters(name) {
+  return "daniel".length < 8;
+}
+function startsWithD(name) {
+  return "Daniel".startsWith("D");
+}
 /* 
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
