@@ -7,11 +7,13 @@
 
 // Finish the predicate function to test if the passed number is negative (less than zero)
 function isNegative(number) {
-  return true;
+  return number < 0;
 }
 
 // Finish the predicate function to test if the passed number is below 9
-function isBelow9(number) {}
+function isBelow9(number) {
+  return number < 9;
+}
 
 /* 
   PLEASE IGNORE LINES BELOW
