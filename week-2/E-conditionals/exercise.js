@@ -2,8 +2,8 @@
   Conditionals
   ---------------------------------
   Add an if statement to check Daniel's role in a CYF class.
-  If Daniel is a mentor, print out "Hi, I'm Daniel, I'm a mentor."
-  If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
+  If Daniel is a mentor, print out "Hi, I'm Daniel. I'm here to teach Javascript."
+  If Daniel is a student, print out "Hi, I'm Daniel. I'm here to learn Javascript."
 */
 
 var name = "Daniel";
@@ -22,5 +22,5 @@ module.exports = {
 /* 
 EXPECTED RESULT
 ---------------
-Hi, I'm Daniel, I'm a mentor.
+Hi, I'm Daniel. I'm here to teach Javascript.
 */

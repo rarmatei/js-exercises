@@ -20,8 +20,12 @@ test("'If' statement is used", () => {
 test("Daniel's role is printed correctly", () => {
   expect(console.log).toBeCalledTimes(1);
   if (danielsRole === "mentor") {
-    expect(console.log).toHaveBeenCalledWith("Hi, I'm Daniel, I'm a mentor.");
+    expect(console.log).toHaveBeenCalledWith(
+      "Hi, I'm Daniel. I'm here to teach Javascript."
+    );
   } else if (danielsRole === "student") {
-    expect(console.log).toHaveBeenCalledWith("Hi, I'm Daniel, I'm a student.");
+    expect(console.log).toHaveBeenCalledWith(
+      "Hi, I'm Daniel. I'm here to learn Javascript."
+    );
   }
 });
