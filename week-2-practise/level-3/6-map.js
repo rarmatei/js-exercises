@@ -9,13 +9,14 @@ function tidyUpString(str) {
     .toLowerCase()
     .replace("/", "");
 }
-
+// var mentorsTidy = mentors.map(tidyUpString) is there is a difference between this var to be here or to be as it is now betwen the two vars
 function captialise(str) {
-  // complete this function
+  return str.charAt(0).toUpperCase() + str.slice(1); // complete this function
 }
 
 var mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];
-var mentorsTidyAndCapitalised;
+var mentorsTidy = mentors.map(tidyUpString);
+var mentorsTidyAndCapitalised = mentorsTidy.map(captialise);
 
 console.log(mentorsTidyAndCapitalised);
 
