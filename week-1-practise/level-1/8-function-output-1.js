@@ -7,6 +7,8 @@ console.log(result);
 
 // Answer these questions:
 // - What does this program do?
+// -multiplay
 // - How many parameters does the function take?
-// - What is the function name?
+// - none
+// - What is the function name? getNumber
 // - Where is the function called? with what parameters?

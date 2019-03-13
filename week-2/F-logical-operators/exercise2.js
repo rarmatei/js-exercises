@@ -5,7 +5,16 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  
+  return num < 0;
+}
+
+function isNegative(num1){
+  if (num1 === 5 >0){
+    return false;
+  }
+}
 
 /* 
   PLEASE IGNORE LINES BELOW
