@@ -15,7 +15,7 @@ function isNumber(num) {
 function integer(num) {
   return Number.isInteger(num);
 }
-function equal(num) {
+function isNotEqualArrayValuse(num) {
   if (excludedNums.includes(num)) {
     return false;
   } else {
