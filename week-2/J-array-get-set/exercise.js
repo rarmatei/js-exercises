@@ -5,13 +5,11 @@
 */
 
 function first(arr) {
-  var firstArrayElement = arr[0];
-  return firstArrayElement; // complete this statement
+  return arr[0]; // complete this statement
 }
-arr.length;
+
 function last(arr) {
-  var lastArrayElement = arr[2];
-  return lastArrayElement; // complete this statement
+  return arr[2]; // complete this statement
 }
 
 /*

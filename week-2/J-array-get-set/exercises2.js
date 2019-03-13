@@ -8,8 +8,7 @@
 
 var numbers = [2, 2, 3];
 numbers[0] = 1;
-numbers[3] = 4;
-//numbers.concat(4);
+numbers = numbers.concat(4);
 // Don't change this array literal declaration
 
 /*
