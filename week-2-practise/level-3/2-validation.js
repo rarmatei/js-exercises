@@ -10,18 +10,10 @@ function validate(num) {
   return isNumber(num) && integer(num) && equal(num);
 }
 function isNumber(num) {
-  if (typeof num === "number") {
-    return true;
-  } else {
-    return false;
-  }
+  return typeof num === "number";
 }
 function integer(num) {
-  if (Number.isInteger(num)) {
-    return true;
-  } else {
-    return false;
-  }
+  return Number.isInteger(num);
 }
 function equal(num) {
   if (excludedNums.includes(num)) {

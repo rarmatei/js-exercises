@@ -6,20 +6,18 @@
 */
 
 function isNegative(a) {
-  if (a < 0) return true;
-  else return false;
+  return a < 0;
 }
+
 function isBetween5and10(a) {
-  if (a > 5 && a <= 10) return true;
-  else return false;
+  return a > 5 && a <= 10;
 }
 function isLessThan8Characters(name) {
-  if (name.length < 8) return true;
-  else return false;
+  return name.length < 8;
 }
+
 function startsWithD(name) {
-  if (name.startsWith("D")) return true;
-  else return false;
+  return name.startsWith("D");
 }
 
 /* 
