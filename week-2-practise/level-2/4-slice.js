@@ -4,8 +4,10 @@
 // - return a new array with the item removed
 // - remove the item at the specified index
 
-function remove(arr, index) {
-  return; // complete this statement
+function remove(arr) {
+  var arr = numbers.slice(0, 2);
+  var index = names.splice(1, 1);
+  return arr; // complete this statement
 }
 
 /* 

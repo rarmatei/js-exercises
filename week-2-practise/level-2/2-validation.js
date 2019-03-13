@@ -4,14 +4,12 @@
 // - is less than or equal to 100
 // Tip: write other small functions for each requirement
 
-function validate1(number) {
-  var Ispositive = number > 0 && Number;
-  return Ispositive;
-}
 function validate(number) {
-  var isbig = validate1 <= 100;
+  var isbig = typeof number === "number" && number <= 100 && number > 0;
+
   return isbig;
 }
+
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
