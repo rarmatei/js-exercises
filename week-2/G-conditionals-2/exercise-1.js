@@ -6,7 +6,13 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+function negativeOrPositive(number) {
+  if (Math.sign(number) > 0 || Math.sign(number) === 0) {
+    return "positive";
+  } else {
+    return "negative";
+  }
+}
 
 /*
   PLEASE IGNORE LINES BELOW
@@ -24,7 +30,7 @@ module.exports = {
   negativeOrPositive
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   5 is positive

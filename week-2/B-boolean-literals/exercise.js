@@ -6,8 +6,11 @@
 */
 
 var codeYourFutureIsGreat = true;
+var mozafarIsCool = false;
+var calculationCorrect = true;
+var moreThan10Students = false;
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -23,7 +26,7 @@ module.exports = {
   moreThan10Students
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   Is Code Your Future great? true

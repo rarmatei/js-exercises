@@ -15,10 +15,10 @@ var everyone = [
   "Swathi"
 ];
 
-var firstFive; // complete this statement
-var lastFive; // complete this statement
+var firstFive = everyone.slice(0, 5); // complete this statement
+var lastFive = everyone.slice(2, 7); // complete this statement
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -32,7 +32,7 @@ module.exports = {
   lastFive
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   ["Daniel", "Irina", "Rares", "Rukmini", "Abdul"]

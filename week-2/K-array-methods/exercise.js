@@ -4,9 +4,9 @@
 */
 
 var numbers = [3, 2, 1];
-var sortedNumbers; // complete this statement
+var sortedNumbers = numbers.sort(); // complete this statement
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -18,7 +18,7 @@ module.exports = {
   sortedNumbers
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   [1, 2, 3]

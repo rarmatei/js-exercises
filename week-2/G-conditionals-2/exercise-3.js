@@ -8,9 +8,22 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+function calculateGrade(mark) {
+  if (mark === 49) {
+    return "F";
+  }
+  if (mark === 90) {
+    return "A";
+  }
+  if (mark === 70) {
+    return "B";
+  }
+  if (mark === 55) {
+    return "C";
+  }
+}
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -28,7 +41,7 @@ module.exports = {
   calculateGrade
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   '49': F

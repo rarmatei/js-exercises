@@ -8,9 +8,15 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+function containsCode(sentence) {
+  if (sentence.includes("code")) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -26,7 +32,7 @@ module.exports = {
   containsCode
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   'code your future': true

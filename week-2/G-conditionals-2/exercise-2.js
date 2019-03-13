@@ -7,9 +7,15 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  if (grade > 50 || grade === 50) {
+    return "passed";
+  } else {
+    return "failed";
+  }
+}
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   ---------------------------*/
@@ -25,7 +31,7 @@ module.exports = {
   studentPassed
 };
 
-/* 
+/*
 EXPECTED RESULT
 ---------------
 '49': failed
