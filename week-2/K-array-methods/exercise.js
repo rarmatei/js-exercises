@@ -4,7 +4,7 @@
 */
 
 var numbers = [3, 2, 1];
-var sortedNumbers; // complete this statement
+var sortedNumbers = numbers.sort();
 
 /* 
   PLEASE IGNORE LINES BELOW
