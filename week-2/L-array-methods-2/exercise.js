@@ -17,22 +17,13 @@ var everyone = [
 
 var firstFive; // complete this statement
 var lastFive; // complete this statement
-var firstFive = everyone.slice(0, 5);
-var lastFive = everyone.slice(everyone.length - 5, everyone.length);
 
 /* 
-  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
 console.log(firstFive);
 console.log(lastFive);
-
-module.exports = {
-  everyone,
-  firstFive,
-  lastFive
-};
 
 /* 
   EXPECTED RESULT

@@ -7,20 +7,13 @@
 var mentors = ["Daniel", "Irina", "Rares"];
 var students = ["Rukmini", "Abdul", "Austine", "Swathi"];
 
-var everyone = mentors.concat(students); // complete this statement
+var everyone; // complete this statement
 
 /* 
-  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
 console.log(everyone);
-
-module.exports = {
-  mentors,
-  students,
-  everyone
-};
 
 /* 
   EXPECTED RESULT

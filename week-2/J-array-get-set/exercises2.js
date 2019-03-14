@@ -7,18 +7,11 @@
 */
 
 var numbers = [2, 2, 3]; // Don't change this array literal declaration
-numbers[0] = 1;
-numbers[3] = 4;
 
 /* 
-  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 console.log(numbers);
-
-module.exports = {
-  numbers
-};
 
 /* 
   EXPECTED RESULT

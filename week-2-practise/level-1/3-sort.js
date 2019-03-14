@@ -3,7 +3,6 @@
 
 var letters = ["a", "n", "c", "e", "z", "f"];
 var sortedLetters; // ONLY EDIT THIS LINE
-var sortedLetters = letters.sort();
 
 console.log(sortedLetters);
 
