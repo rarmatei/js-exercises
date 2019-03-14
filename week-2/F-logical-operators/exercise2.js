@@ -5,8 +5,19 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
-
+function isNegative(num) {
+  return num < 0;
+}
+function isBetween5and10(num) {
+  return num >= 5 && num <= 10;
+}
+function isLessThan8Characters(name) {
+  return name.length < 8;
+}
+function startsWithD(name) {
+  name = name.split("");
+  return name[0] === "D";
+}
 /* 
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
