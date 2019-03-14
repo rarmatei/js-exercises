@@ -5,10 +5,12 @@
 
 var isHappy = "false";
 
-if (isHappy == true) {
-  console.log("I am happy");
+//if (isHappy == true) {
+if (isHappy) {
+  // I've removed "== true"
+  console.log("I am not happy"); // Here is the expected result, I've switched the console.log
 } else {
-  console.log("I am not happy");
+  console.log("I am happy");
 }
 
 /* 
