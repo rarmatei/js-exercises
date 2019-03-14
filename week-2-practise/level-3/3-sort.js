@@ -4,8 +4,9 @@
 
 var nums = [10, 1, 5, 29, 100];
 var nums2 = [11, 6, 3, 29, 12];
-var sortedNums; // complete this statement
-
+var sortedNums = nums.concat(nums2).sort(function(a, b) {
+  return a - b;
+}); // I'VE USED A COMPARE FUNCTION THAT SORT THE ARRAY ASCENDING
 console.log(sortedNums);
 
 // 2. Using code, show that the variables nums and nums2 were not changed
