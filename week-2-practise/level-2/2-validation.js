@@ -4,8 +4,10 @@
 // - is less than or equal to 100
 // Tip: write other small functions for each requirement
 
-function validate(num) {
-  return typeof num === "number";
+function validate(number) {
+  var isbig = number <= 100 && number > 0;
+
+  return isbig;
 }
 
 /* 
