@@ -3,9 +3,10 @@
 // What was wrong with the original code?
 // Leave comments above your changes to explain
 
-var isHappy = "false";
+var isHappy = false; // format it to expression.
 
-if (isHappy == true) {
+if (isHappy === true) {
+  // format it to be compatible with syntax of comparison.
   console.log("I am happy");
 } else {
   console.log("I am not happy");
