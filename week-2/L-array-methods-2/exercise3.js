@@ -6,18 +6,24 @@
 
 var ukNations = ["Scotland", "Wales", "England", "Northern Ireland"];
 
-function isInUK(country) {
+function isInUk(country) {
   return; // complete this statement
 }
 
-/* 
+/*
+  PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 console.log(isInUk("France"));
 console.log(isInUk("Republic of Ireland"));
 console.log(isInUk("England"));
 
-/* 
+module.exports = {
+  ukNations,
+  isInUk
+};
+
+/*
   EXPECTED RESULT
   ---------------
   false
