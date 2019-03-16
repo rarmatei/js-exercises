@@ -4,7 +4,12 @@
 
 var nums = [10, 1, 5, 29, 100];
 var nums2 = [11, 6, 3, 29, 12];
-var sortedNums = nums.pop(nums2); // complete this statement
+
+var sortedNums = nums.concat(nums2).sort(compare);
+function compare(x, y) {
+  return x - y;
+}
+// complete this statement
 console.log(sortedNums);
 
 // 2. Using code, show that the variables nums and nums2 were not changed
