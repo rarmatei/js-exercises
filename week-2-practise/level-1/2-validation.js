@@ -4,6 +4,8 @@
 var num = 10;
 var biggerThanOrEqualToTen = num >= 10;
 var isBigEnough = biggerThanOrEqualToTen; // ONLY EDIT THIS LINE
+//Or
+//var isBigEnough = num >=10;
 
 if (isBigEnough) {
   console.log("num is bigger than or equal to 10");
