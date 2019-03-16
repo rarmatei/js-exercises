@@ -13,8 +13,11 @@ var attendanceCounts = [
   ["Tayoa", 11],
   ["Nina", 10]
 ];
+function nameOfStudent (name,index) {
+  return 
+}
 
-var eligibleStudentNames; // TODO: Complete this line.
+var eligibleStudentNames = ; // TODO: Complete this line.
 
 console.log(eligibleStudentNames);
 
