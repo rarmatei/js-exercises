@@ -8,7 +8,7 @@ function validate(num) {
   return typeof num === "number" && num >= 0 && num <= 100;
 }
 
-/* 
+/*
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
@@ -18,7 +18,7 @@ console.log(validate(101));
 console.log(validate(-12));
 console.log(validate("16"));
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   true

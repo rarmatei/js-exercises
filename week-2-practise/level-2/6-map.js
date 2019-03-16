@@ -11,7 +11,7 @@ var percentagesFormatted = percentages.map(persentage);
 
 console.log(percentagesFormatted);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   [1%, 23%, 92%, 18%]

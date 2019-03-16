@@ -18,7 +18,7 @@ var everyone = [
 var firstFive = everyone.slice(0, 5); // complete this statement
 var lastFive = everyone.slice(everyone.length - 5, everyone.length); // complete this statement
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -32,7 +32,7 @@ module.exports = {
   lastFive
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   ["Daniel", "Irina", "Rares", "Rukmini", "Abdul"]

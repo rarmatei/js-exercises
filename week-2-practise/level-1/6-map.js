@@ -15,7 +15,7 @@ var mentorsTidy = mentors.map(tidyUpString); // ONLY EDIT THIS LINE
 
 console.log(mentorsTidy);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   ["daniel", "irina", "gordon", "ashleigh"]

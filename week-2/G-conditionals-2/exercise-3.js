@@ -20,7 +20,7 @@ function calculateGrade(mark) {
   }
 }
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -38,7 +38,7 @@ module.exports = {
   calculateGrade
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   '49': F

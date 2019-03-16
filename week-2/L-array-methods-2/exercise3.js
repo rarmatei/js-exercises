@@ -10,7 +10,7 @@ function isInUK(country) {
   return ukNations.includes(country); // complete this statement
 }
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -26,7 +26,7 @@ console.log(isInUK("England"));
 //   isInUk
 // };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   false

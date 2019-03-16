@@ -19,7 +19,7 @@ function startsWithD(name) {
   return name[0] === "D";
 }
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -40,7 +40,7 @@ module.exports = {
   startsWithD
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   Is -10 is a negative number? true

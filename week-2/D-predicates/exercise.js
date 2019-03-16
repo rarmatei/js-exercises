@@ -15,7 +15,7 @@ function isBelow9(number) {
   return number < 9;
 }
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -31,7 +31,7 @@ module.exports = {
   isBelow9
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   The number in test is 5

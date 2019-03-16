@@ -12,7 +12,7 @@ function last(arr) {
   return arr[arr.length - 1]; // complete this statement
 }
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -27,7 +27,7 @@ module.exports = {
   last
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   1

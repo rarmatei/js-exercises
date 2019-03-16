@@ -6,7 +6,7 @@ var sortedLetters = letters.sort(); // ONLY EDIT THIS LINE
 
 console.log(sortedLetters);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   [ 'a', 'c', 'e', 'f', 'n', 'z' ]

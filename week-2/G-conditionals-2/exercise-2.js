@@ -15,7 +15,7 @@ function studentPassed(grade) {
   }
 }
 
-/* 
+/*
   PLEASE IGNORE LINES BELOW
   DO NOT EDIT BELOW THIS LINE
   ---------------------------*/
@@ -31,7 +31,7 @@ module.exports = {
   studentPassed
 };
 
-/* 
+/*
 EXPECTED RESULT
 ---------------
 '49': failed

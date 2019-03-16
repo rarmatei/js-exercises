@@ -8,7 +8,7 @@ var index = arr.indexOf(itemToFind); // ONLY EDIT THIS LINE
 
 console.log(index);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   3

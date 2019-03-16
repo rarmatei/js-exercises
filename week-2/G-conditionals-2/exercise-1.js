@@ -30,7 +30,7 @@ module.exports = {
   negativeOrPositive
 };
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   5 is positive

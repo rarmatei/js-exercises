@@ -10,7 +10,7 @@ function remove(arr, valueToRemove) {
     .concat(arr.slice(indexOf(valueToRemove) + 1, arr.length));
 }
 
-/* 
+/*
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var numbers = [1, 2, 3];
@@ -22,7 +22,7 @@ var newNames = remove(names, "Ashleigh");
 console.log(newNumbers);
 console.log(newNames);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   [1, 3]

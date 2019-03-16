@@ -7,7 +7,7 @@ var sortedLetters = letters.concat(letters2).sort(); // ONLY EDIT THIS LINE
 
 console.log(sortedLetters);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   [ 'a', 'b', 'c', 'e', 'f', 'g', 'l','n', 'o', 'v', 'w', 'z' ]
