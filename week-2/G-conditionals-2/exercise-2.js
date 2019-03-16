@@ -8,13 +8,13 @@
 */
 
 function studentPassed(grade1, grade2, grade3) {
-  if (grade1 > 50) {
-    return "passed";
-  }
   if (grade1 < 50) {
     return "failed";
   }
-  if ((grade1 = 100)) {
+  if (grade2 >= 50) {
+    return "passed";
+  }
+  if ((grade3 = 100)) {
     return "passed";
   }
 }

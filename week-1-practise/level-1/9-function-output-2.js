@@ -7,8 +7,9 @@ console.log(result);
 
 // Answer these questions:
 // - What does this program do? Run it and see, or Google some of the methods used ot understand them.
-// - How many parameters does the function take?
-// - What is the function name?
-// - Where is the function called? with what parameters?
-// - What does the function return?
-// - How can this function be improved?
+//    It does concatenation of two strings
+// - How many parameters does the function take? 2 parameters
+// - What is the function name? S
+// - Where is the function called? with what parameters? by the variable result
+// - What does the function return? It returns the values of w1 and w2 concatened
+// - How can this function be improved? ....
