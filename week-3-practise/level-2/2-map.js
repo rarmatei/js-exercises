@@ -14,7 +14,12 @@ var attendanceCounts = [
   ["Nina", 10]
 ];
 
-var eligibleStudentNames; // TODO: Complete this line.
+var eligibleStudentNames = attendanceCounts.map(function (arr) {
+arr.filter(function (item) {
+  if (typeof item != "string" && item >=8 )
+  return true
+})
+}); // TODO: Complete this line.
 
 console.log(eligibleStudentNames);
 
