@@ -11,6 +11,9 @@ function tidyUpString(str) {
 }
 
 function capitalise(str) {
+  // str = str.split("");
+  // str[0] = str[0].toUpperCase();
+  // return str.join("");
   return (
     tidyUpString(str)
       .charAt(0)

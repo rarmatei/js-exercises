@@ -12,9 +12,9 @@ function validate(num) {
 
 function isInt(number) {
   return (
-    typeof number === "number" &&
-    isFinite(number) &&
-    Math.floor(number) === number
+    typeof number === "number" && number % 1 === 0
+    // isFinite(number) &&
+    // Math.floor(number) === number
   );
 }
 
