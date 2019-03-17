@@ -6,12 +6,15 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 
 // -- Complete this function -->
-function hasOnlyStudents() {}
+function hasOnlyStudents(studentName) {
+  return students.includes(studentName);
+}
 
 // DEBUG
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
+//var group = ["Austine", "Dany", "Swathi"];
 
-var groupIsOnlyStudents = hasOnlyStudents(group);
+var groupIsOnlyStudents = group.every(hasOnlyStudents);
 
 if (groupIsOnlyStudents) {
   console.log("The group contains only students");
