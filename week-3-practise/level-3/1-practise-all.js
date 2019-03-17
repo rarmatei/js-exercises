@@ -45,4 +45,14 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 var password = ["Se%5", "TktE.TJTU", "384HsHF", "dvyyeyY!5", "tryT3729."];
 
+function validatePassword (password) {
+  return password.length >= 5 && /[0-9]/.test(password) && /[a-z]/.test(password) && /[A-Z]/.test(password) && nonAlphanumeric(password);
+}
+ 
+function nonAlphanumeric (str) {
+  return str.includes(".") || str.includes("!") || str.includes("$")  || str.includes("#") || str.includes("%");
+}
+
+var PasswordValidationResult = password.map(validatePassword)
+
 console.log(PasswordValidationResult)
