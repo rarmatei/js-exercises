@@ -6,7 +6,9 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 
 // -- Complete this function -->
-function hasOnlyStudents() {}
+function hasOnlyStudents(mentor, student) {
+  return students === group;
+}
 
 // DEBUG
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
