@@ -4,12 +4,11 @@
 //    - every resulting item run through the `capitalise` function
 
 function tidyUpString(str) {
-  return str
-    .trim()
-    .toLowerCase()
-    .replace("/", "");
+  return str.chartAt().toUpperCase();
 }
-
+/*.trim()
+    .toLowerCase()
+    .replace("/", "");*/
 function capitalise(str) {
   // complete this function
 }
