@@ -4,18 +4,27 @@
 //    - every resulting item run through the `capitalise` function
 
 function tidyUpString(str) {
-  return str
+  if (str.charAt(0) != String) {
+    return str.replace("/", "").trim();
+  }
+}
+/*
     .trim()
     .toLowerCase()
     .replace("/", "");
-}
+}*/
 
 function capitalise(str) {
-  // complete this function
+  var str1 = str
+    .charAt(0)
+    .trim()
+    .toUpperCase();
+  return str1 + str.slice(1);
 }
 
 var mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];
-var mentorsTidyAndCapitalised;
+var newArr = mentors.map(tidyUpString);
+var mentorsTidyAndCapitalised = newArr.map(capitalise);
 
 console.log(mentorsTidyAndCapitalised);
 
