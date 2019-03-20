@@ -5,10 +5,13 @@
   - Add a check for null values, and if one exists, return `false`
   - Do not edit any of the existing code
 */
-
+function isNull(element) {
+  return element === null;
+}
 function findPairs(students, mentors, pairsByIndex) {
-  // -- Write your code here -->
-
+  if (pairsByIndex.some(isNull)) {
+    return false;
+  }
   var pairs = pairsByIndex.map(function(indexes) {
     var student = students[indexes[0]];
     var mentor = mentors[indexes[1]];

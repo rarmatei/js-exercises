@@ -6,7 +6,11 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 
 // -- Complete this function -->
-function hasOnlyStudents() {}
+function hasOnlyStudents() {
+  if (students === group) {
+    return true;
+  }
+}
 
 // DEBUG
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
