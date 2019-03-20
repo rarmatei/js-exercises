@@ -7,13 +7,35 @@
 
   An array with numbers 1-15 has been provided for debugging.
 */
+// eturn sequence2.splice(sequence2.indexOf(num), 1, "fuzz")}
 
 // Complete this function -->
-function fizzBuzz() {}
-
+function changeNumbersToFuzzBuzz(num) {
+  if (num % 3 === 0) {
+    return "fuzz";
+  }
+  if (num % 5 === 0) {
+    return "Buzz";
+  }
+  if (num % 3 == 0 && num % 5 == 0) {
+    return "FizzBuzz";
+  } else return num;
+}
+function changMultiblicationToFizzBuzz(num) {
+  if (num % 3 == 0 && num % 5 == 0) return "FizzBuzz";
+}
+// var sequence2 = sequence.slice
+//   if (num % 3 === 0) { return sequence.splice(sequence.indexOf(num),1 , "Fuzz") ;}
+//   else {return sequence}
+//   if (num % 5 === 0) { return sequence.splice(sequence.indexOf(num), 1, "Buzz") ;}
+//  if ((num % 3 == 0) && (num % 5 == 0)) { return "FizzBuzz"; }
+//  else return num;}
+function fizzBuzz(array) {
+  return array.map(changeNumbersToFuzzBuzz);
+}
 // DEBUG
 var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-fizzBuzz(sequence);
+console.log(fizzBuzz(sequence));
 
 /*
 Expected output:
