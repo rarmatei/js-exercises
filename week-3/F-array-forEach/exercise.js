@@ -11,31 +11,21 @@
 
 // Complete this function -->
 function changeNumbersToFuzzBuzz(num) {
-  if (num % 3 === 0) {
-    return "fuzz";
-  }
-  if (num % 5 === 0) {
-    return "Buzz";
-  }
   if (num % 3 == 0 && num % 5 == 0) {
-    return "FizzBuzz";
-  } else return num;
+    console.log("FizzBuzz");
+  } else if (num % 3 === 0) {
+    console.log("Fizz");
+  } else if (num % 5 === 0) {
+    console.log("Buzz");
+  } else console.log(num);
 }
-function changMultiblicationToFizzBuzz(num) {
-  if (num % 3 == 0 && num % 5 == 0) return "FizzBuzz";
-}
-// var sequence2 = sequence.slice
-//   if (num % 3 === 0) { return sequence.splice(sequence.indexOf(num),1 , "Fuzz") ;}
-//   else {return sequence}
-//   if (num % 5 === 0) { return sequence.splice(sequence.indexOf(num), 1, "Buzz") ;}
-//  if ((num % 3 == 0) && (num % 5 == 0)) { return "FizzBuzz"; }
-//  else return num;}
+
 function fizzBuzz(array) {
-  return array.map(changeNumbersToFuzzBuzz);
+  return array.forEach(changeNumbersToFuzzBuzz);
 }
 // DEBUG
-var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(fizzBuzz(sequence));
+var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+fizzBuzz(sequence);
 
 /*
 Expected output:
