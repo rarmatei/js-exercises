@@ -9,12 +9,25 @@
 */
 
 // Complete this function -->
-function fizzBuzz() {}
 
 // DEBUG
 var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-fizzBuzz(sequence);
+fizzBuzz.map(number => {
+  if (number % 3 == 0) {
+    return "Fizz";
+  } else {
+    if (number % 5 == 0) {
+      return "Buzz";
+    } else {
+      return number;
+    }
+  }
+});
 
+console.log(fizzBuzz.forEach(sequence));
+
+/*var newArr= sequence.map(fizzBuzz);
+console.log(newArr.forEach(fizzBuzz));
 /*
 Expected output:
 1
