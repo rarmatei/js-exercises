@@ -9,11 +9,34 @@
 */
 
 // Complete this function -->
-function fizzBuzz() {}
-
-// DEBUG
+// function fizzBuzz(i) {
+//   for (i = 0; i < sequence.length; i++) {
+//     if (sequence[i] % 5 === 0 && sequence[i] % 3 === 0) {
+//       console.log('FizzBuzz');
+//     } else if (sequence[i] % 3 === 0) {
+//       console.log('Fizz');
+//     } else if (sequence[i] % 5 === 0) {
+//       console.log('Buzz');
+//     } else {
+//       console.log(sequence[i]);
+//     }
+//   }
+// }
 var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-fizzBuzz(sequence);
+sequence.forEach(function(num) {
+  if (num % 5 === 0 && num % 3 === 0) {
+    console.log("FizzBuzz");
+  } else if (num % 3 === 0) {
+    console.log("Fizz");
+  } else if (num % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(num);
+  }
+});
+// DEBUG
+// var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// fizzBuzz(sequence);
 
 /*
 Expected output:
@@ -29,4 +52,6 @@ Expected output:
 'Buzz'
 */
 
-module.exports = { fizzBuzz };
+module.exports = {
+  fizzBuzz
+};
