@@ -6,8 +6,12 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 
 // -- Complete this function -->
-function hasOnlyStudents() {}
-
+function hasOnlyStudents(group) {
+  return group.every(isInArayStudents);
+}
+function isInArayStudents(name) {
+  return students.includes(name);
+}
 // DEBUG
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
 
