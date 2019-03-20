@@ -6,8 +6,9 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 
 // -- Complete this function -->
-function hasOnlyStudents() {}
-
+function hasOnlyStudents(name) {
+  return students.contains(name);
+}
 // DEBUG
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
 

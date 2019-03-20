@@ -8,7 +8,9 @@
 
 function findPairs(students, mentors, pairsByIndex) {
   // -- Write your code here -->
-
+  if (pairsByIndex.some(item => item === null)) {
+    return false;
+  }
   var pairs = pairsByIndex.map(function(indexes) {
     var student = students[indexes[0]];
     var mentor = mentors[indexes[1]];

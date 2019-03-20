@@ -5,10 +5,16 @@
   - Finish the statement on line 10 to produce an array with valid content
   - Do not edit any of the other existing code
 */
+function isArray(arr) {
+  if (arr.length !== 2) {
+    return false;
+  }
+
+  return true;
+}
 
 function findPairs(students, mentors, pairsByIndex) {
-  var pairsByIndexFiltered; // <-- Complete this statement
-
+  var pairsByIndexFiltered = pairsByIndex.filter(isArray); // <-- Complete this statement
   var pairs = pairsByIndexFiltered.map(function(indexes) {
     var student = students[indexes[0]];
     var mentor = mentors[indexes[1]];
