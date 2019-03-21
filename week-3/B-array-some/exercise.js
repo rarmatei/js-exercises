@@ -9,13 +9,21 @@
 function findPairs(students, mentors, pairsByIndex) {
   // -- Write your code here -->
 
-  var pairs = pairsByIndex.map(function(indexes) {
-    var student = students[indexes[0]];
-    var mentor = mentors[indexes[1]];
-    return [student, mentor];
-  });
+  if (
+    pairsByIndex.some(function(item) {
+      return item === null;
+    })
+  ) {
+    return false;
+  } else {
+    var pairs = pairsByIndex.map(function(indexes) {
+      var student = students[indexes[0]];
+      var mentor = mentors[indexes[1]];
+      return [student, mentor];
+    });
 
-  return pairs;
+    return pairs;
+  }
 }
 
 // DEBUG
