@@ -14,7 +14,17 @@ var attendances = [
   ["Nina", 10]
 ];
 
-var eligibleStudentNames; // TODO: Complete this line.
+function eligibleForExam(attendance) {
+  if (attendance[1] >= 8) {
+    return attendance[0];
+  } else {
+    return "";
+  }
+}
+
+var eligibleStudentNames = attendances
+  .filter(eligibleForExam)
+  .map(eligibleForExam); // TODO: Complete this line.
 
 console.log(eligibleStudentNames);
 

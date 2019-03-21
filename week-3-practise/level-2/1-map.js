@@ -12,7 +12,13 @@ var londonLocations = [
   ["Greenwich", "tube", "bus", "river boat"]
 ];
 
-var locationsByBoat;
+function transport(location) {
+  if (location.includes("river boat")) {
+    return location[0];
+  }
+}
+
+var locationsByBoat = londonLocations.filter(transport).map(transport);
 
 console.log(locationsByBoat);
 
