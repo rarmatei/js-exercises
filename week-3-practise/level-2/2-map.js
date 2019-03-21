@@ -14,7 +14,13 @@ var attendances = [
   ["Nina", 10]
 ];
 
-var eligibleStudentNames; // TODO: Complete this line.
+function filterLessThan8(number) {
+  return number[1] >= 8;
+}
+
+var eligibleStudentNames = attendances
+  .filter(filterLessThan8)
+  .map(name => name[0]); // TODO: Complete this line.
 
 console.log(eligibleStudentNames);
 
