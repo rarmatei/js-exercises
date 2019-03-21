@@ -11,10 +11,12 @@ var londonLocations = [
   ["Tower bridge", "tube", "bus"],
   ["Greenwich", "tube", "bus", "river boat"]
 ];
+function byBoat(name) {
+  if (name.includes("river boat"))
+    console.log(londonLocations[londonLocations.indexOf(name)][0]);
+}
 
-var locationsByBoat;
-
-console.log(locationsByBoat);
+var locationsByBoat = londonLocations.map(byBoat);
 
 /* EXPECTED OUTPUT
 ["London bridge", "Greenwich"]
