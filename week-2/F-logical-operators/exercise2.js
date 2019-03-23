@@ -14,9 +14,9 @@ function isBetween5and10(num) {
 function isLessThan8Characters(name) {
   return name.length < 8;
 }
-function startsWithD(letter) {
-  letter = "D";
-  return true;
+function startsWithD(name) {
+  
+  return name.startsWith("D");
 }
 /*
   PLEASE IGNORE LINES BELOW
