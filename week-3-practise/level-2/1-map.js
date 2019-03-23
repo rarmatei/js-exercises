@@ -13,7 +13,15 @@ var stationTransportOptionsPairs = [
   ["Greenwich", ["tube", "bus", "river boat"]]
 ];
 
-var stationsWithRiverBoat; // <-- Complete this statement
+function travelMean(device) {
+  return device[1].includes("river boat");
+}
+var tourismMove = stationTransportOptionsPairs.filter(travelMean);
+function destination(area) {
+  return area[0];
+}
+var stationsWithRiverBoat = tourismMove.map(destination);
+// <-- Complete this statement
 
 console.log(stationsWithRiverBoat);
 
