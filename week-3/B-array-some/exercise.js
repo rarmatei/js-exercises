@@ -9,7 +9,7 @@
 function findPairs(students, mentors, pairsByIndex) {
   // -- Write your code here -->
 
-  if (pairsByIndex.includes(null) {
+  if (pairsByIndex.includes(null)) {
     return false;
   }
 
