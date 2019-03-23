@@ -22,7 +22,8 @@ function multiplyBy100(numbers) {
     return number * 100;
   });
 }
-
+var numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(multiplyBy100(numbers));
 // DEBUG
 // Debug your function by
 // - calling it with some sample input
