@@ -12,7 +12,16 @@ var londonLocations = [
   ["Greenwich", "tube", "bus", "river boat"]
 ];
 
-var locationsByBoat;
+// var locationsByBoat = londonLocations
+//   .map(function containRiverBoat(arr) {
+//     if (arr.includes("river boat")) {
+//       return arr[0];
+//     }
+//   })
+//   .filter(el => el !== undefined);
+var locationsByBoat = londonLocations
+  .filter(arrIncludeRiverBoat => arrIncludeRiverBoat.includes("river boat"))
+  .map(returnFirstElementOfArray => returnFirstElementOfArray[0]);
 
 console.log(locationsByBoat);
 
