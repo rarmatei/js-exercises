@@ -6,8 +6,26 @@
   - Do not edit any of the other existing code
 */
 
+function myFilter(item)
+{
+  if (item === null) {
+    return false;
+  } else if (item === false) {
+    return false;
+  } else if (typeof item === "string") {
+    return false;
+  } else if (item.length < 2 ){
+    return false ;
+  }
+    else {
+      return true;
+}
+}
+
 function findPairs(students, mentors, pairsByIndex) {
-  var pairsByIndexFiltered; // <-- Complete this statement
+  console.log(pairsByIndex);
+  var pairsByIndexFiltered = pairsByIndex.filter(myFilter); // <-- Complete this statement
+  console.log(pairsByIndexFiltered);
 
   var pairs = pairsByIndexFiltered.map(function(indexes) {
     var student = students[indexes[0]];
