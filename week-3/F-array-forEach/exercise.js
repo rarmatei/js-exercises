@@ -9,11 +9,24 @@
 */
 
 // Complete this function -->
-function fizzBuzz() {}
+
+var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function fizzBuzz(num) {
+  if (num % 3 === 0 && num % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (num % 3 === 0) {
+    console.log("Fizz");
+  } else if (num % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(num);
+  }
+}
 
 // DEBUG
-var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-fizzBuzz(sequence);
+
+sequence.forEach(fizzBuzz);
 
 /*
 Expected output:

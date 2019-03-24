@@ -4,7 +4,16 @@
 */
 
 // Complete this function -->
-function multiplyBy100(numbers) {}
+// function multiplyBy100(numbers) {
+//   return numbers * 100;
+// }
+
+var numbers = [1, 2, 3];
+var multiplyBy100 = numbers.map(number => {
+  return number * 100;
+});
+
+console.log(multiplyBy100);
 
 // DEBUG
 // Debug your function by

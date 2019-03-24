@@ -7,7 +7,7 @@
 */
 
 function findPairs(students, mentors, pairsByIndex) {
-  var pairsByIndexFiltered; // <-- Complete this statement
+  var pairsByIndexFiltered = pairsByIndex.filter(checkPair); // <-- Complete this statement
 
   var pairs = pairsByIndexFiltered.map(function(indexes) {
     var student = students[indexes[0]];
@@ -16,6 +16,9 @@ function findPairs(students, mentors, pairsByIndex) {
   });
 
   return pairs;
+}
+function checkPair(element) {
+  return Array.isArray(element) && element.length === 2;
 }
 
 // DEBUG
