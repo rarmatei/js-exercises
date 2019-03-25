@@ -14,7 +14,15 @@ var attendanceCounts = [
   ["Nina", 10]
 ];
 
-var eligibleStudentNames; // TODO: Complete this line.
+function attendance(day) {
+  return day[1] >= 8;
+}
+var goodStudent = attendanceCounts.filter(attendance);
+
+function exam(name) {
+  return name[0];
+}
+var eligibleStudentNames = goodStudent.map(exam); // TODO: Complete this line.
 
 console.log(eligibleStudentNames);
 
