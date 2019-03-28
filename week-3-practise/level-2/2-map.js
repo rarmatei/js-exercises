@@ -18,10 +18,10 @@ function studentWhoAttendedAtLeast8Classes(attendance){
   return attendance[1] >= 8;
 }
 
-function studentNameWhoAttendedAtLeast8Classes(studentName){
-  return studentName[0];
+function studentName(student){
+  return student[0];
 }
-var eligibleStudentNames = attendanceCounts.filter(studentWhoAttendedAtLeast8Classes).map(studentNameWhoAttendedAtLeast8Classes); // TODO: Complete this line.
+var eligibleStudentNames = attendanceCounts.filter(studentWhoAttendedAtLeast8Classes).map(studentName); // TODO: Complete this line.
 
 console.log(eligibleStudentNames);
 

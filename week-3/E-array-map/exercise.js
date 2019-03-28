@@ -14,6 +14,6 @@ function multiplyBy100(numbers) {
 // - logging the output to the console
 
 var numbs = [10, 20, 30];
-var numbsDoubled = numbs.map(multiplyBy100);
-console.log(numbsDoubled);
+var numberAfterMultiplyBy100 = numbs.map(multiplyBy100);
+console.log(numberAfterMultiplyBy100);
 module.exports = { multiplyBy100 };
