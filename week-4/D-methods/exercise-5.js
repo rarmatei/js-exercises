@@ -24,7 +24,9 @@ var coffeeMachine = {
       this.insertedAmount -= this.prices[coffee];
 
       return "pleas take your " + coffee;
-    } else return "Sorry you don't have enough money for a" + coffee;
+    } else {
+      return "Sorry you don't have enough money for a" + coffee;
+    }
   }
 };
 
