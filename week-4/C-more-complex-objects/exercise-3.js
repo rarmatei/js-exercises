@@ -31,13 +31,25 @@ var parkAvenueHouse = {
 */
 
 // returns the full name (first name + last name) of the owner of the house
-function getOwnerFullName(house) {}
+function getOwnerFullName(house) {
+  return house.currentOwner.firstName + " " + house.currentOwner.lastName;
+}
 
 // returns an array of the owners' email addresses of the two houses
-function getEmailAddresses(house1, house2) {}
+function getEmailAddresses(house1, house2) {
+  return [house1.currentOwner.email, house2.currentOwner.email];
+}
 
 // returns the address for the cheapest house out of the two
-function getCheapestAddress(house1, house2) {}
+function getCheapestAddress(house1, house2) {
+  var housesPrices = [house1.price, house2.price];
+  var theCheapestPrice = Math.min(...housesPrices);
+  if (house1.price === theCheapestPrice) return house1.address;
+  if (house2.price === theCheapestPrice) return house2.address;
+  // if house1 price less than or equal to house2 price return house1.address; return house2.address
+  // if (house1.price <= house2) return house1.address
+  // else return house2.address
+}
 
 /*
   DO NOT EDIT ANYTHING BELOW THIS LINE
