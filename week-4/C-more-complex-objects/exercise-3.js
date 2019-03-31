@@ -55,7 +55,7 @@ function getCheapestAddress(house1, house2) {
   } else if (houseOnePrice > houseTwoPrice){
     return house2.address;
   }else{
-    return 'price are the saem';
+    return 'price are the same';
   }
 }
 
