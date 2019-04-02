@@ -59,14 +59,32 @@ var restaurantFinderApplication = {
   applicationVersion: "1.0",
   restaurants: restaurants,
   findAvailableRestaurants: function(numberOfPeople) {
+    function findRestaurant(restaurant) {
+      return (
+        restaurant.totalSeats - restaurant.numberOfCustomers > numberOfPeople
+      );
+    }
+    return restaurants.filter(findRestaurant).map(R => R.name);
+
     // Complete here
   },
   findRestaurantServingDish: function(dishName) {
+    function checkDish(dish) {
+      return restaurants.includes(dish);
+    }
+    return restaurants.filter(checkDish).map(r => r.name);
     // Complete here
   },
   countNumberOfRestaurantsInArea: function(area) {
-    // Complete here
+    function adressCount(address1, address2) {
+      if (Object.values(address1) === Object.values(address2));
+      {
+        return address1, address2;
+      }
+    }
+    return restaurants.filter(adressCount).map(adressCount).length;
   }
+  // Complete here
 };
 
 /*
