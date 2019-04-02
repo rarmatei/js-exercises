@@ -4,11 +4,13 @@
 
 var dog = {
   name: "Billy",
-  wantsToPlay: false
-};
+  wantsToPlay: false,
+
+}
 
 // WRITE CODE BELOW THIS LINE
-
+dog.name ="Rex";
+dog.wantsToPlay =true;
 // WRITE CODE ABOVE THIS LINE
 
 //DO NOT MODIFY BELOW
