@@ -10,19 +10,27 @@ We made a start on this for you here:
 
 var bottle = {
   volume: 0,
-  fill: function() {
+  fill: function(volume) {
+    return (this.volume = 100);
+
     // calling this function should make you bottles volume = 100;
   },
-  drink: function() {
-    // calling this function should decrease your bottles volume by 10;
+
+  drink: function(volume) {
+    return (this.volume -= 10);
   },
-  empty: function() {
-    // this function should return true if your bottles volume = 0
+  // calling this function should decrease your bottles volume by 10;
+  empty: function(volume) {
+    if (this.volume === 0) {
+      return true;
+    }
   }
+
+  // this function should return true if your bottles volume = 0
 };
 
 /*
---TIP--
+--TIP
 
 Remember that for changing properties on the current object inside one of its
 methods you can refer to it by its variable name: `bottle`.
