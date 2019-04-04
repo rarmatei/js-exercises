@@ -52,6 +52,8 @@ var restaurants = [restaurant1, restaurant2, restaurant3];
 /*
 DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
+1) Define a method findAvailableRestaurants which takes a number of people in parameter and returns
+all the restaurant names which have the required number of seats available at the moment.
 */
 
 var restaurantFinderApplication = {
@@ -59,12 +61,35 @@ var restaurantFinderApplication = {
   applicationVersion: "1.0",
   restaurants: restaurants,
   findAvailableRestaurants: function(numberOfPeople) {
+    return restaurants
+      .filter(
+        seatNumber =>
+          seatNumber.totalSeats - seatNumber.numberOfCustomers >= numberOfPeople
+      )
+      .map(restaurantName => restaurantName.name);
+
     // Complete here
   },
+
+  /* 2) Define a method findRestaurantServingDish which takes a dish name in parameter and returns
+ all the restaurant names serving this dish.*/
+
   findRestaurantServingDish: function(dishName) {
+    return restaurants
+      .filter(name => name.menu.includes(dishName))
+      .map(restaurantName => restaurantName.name);
+
     // Complete here
   },
+
+  /* 3) Define a method countNumberOfRestaurantsInArea which takes an area of Glasgow in parameter (centre, west),
+and returns the number of restaurants in this area.
+*/
   countNumberOfRestaurantsInArea: function(area) {
+    return restaurants.filter(parameter =>
+      parameter.address.area.includes(area)
+    ).length;
+
     // Complete here
   }
 };
