@@ -39,6 +39,142 @@ var writers = [
   }
 ];
 
+console.log(
+  "Hi, my name is" +
+    " " +
+    Object.values(writers)
+      .slice(0, 1)
+      .map(name => name.firstName) +
+    " " +
+    Object.values(writers)
+      .slice(0, 1)
+      .map(name => name.lastName) +
+    " " +
+    " . I am " +
+    " " +
+    Object.values(writers)
+      .slice(0, 1)
+      .map(name => name.age) +
+    " " +
+    "years old,and work as a " +
+    " " +
+    Object.values(writers)
+      .slice(0, 1)
+      .map(name => name.occupation) +
+    "."
+);
+
+console.log(
+  "Hi, my name is" +
+    " " +
+    Object.values(writers)
+      .slice(1, 2)
+      .map(name => name.firstName) +
+    " " +
+    Object.values(writers)
+      .slice(1, 2)
+      .map(name => name.lastName) +
+    " " +
+    " . I am " +
+    " " +
+    Object.values(writers)
+      .slice(1, 2)
+      .map(name => name.age) +
+    " " +
+    "years old,and work as a " +
+    " " +
+    Object.values(writers)
+      .slice(1, 2)
+      .map(name => name.occupation) +
+    "."
+);
+
+console.log(
+  "Hi, my name is" +
+    " " +
+    Object.values(writers)
+      .slice(2, 3)
+      .map(name => name.firstName) +
+    " " +
+    Object.values(writers)
+      .slice(2, 3)
+      .map(name => name.lastName) +
+    " " +
+    " . I am " +
+    " " +
+    Object.values(writers)
+      .slice(2, 3)
+      .map(name => name.age) +
+    " " +
+    "years old,and work as a " +
+    " " +
+    Object.values(writers)
+      .slice(2, 3)
+      .map(name => name.occupation) +
+    "."
+);
+
+console.log(
+  "Hi, my name is" +
+    " " +
+    Object.values(writers)
+      .slice(3, 4)
+      .map(name => name.firstName) +
+    " " +
+    Object.values(writers)
+      .slice(3, 4)
+      .map(name => name.lastName) +
+    " " +
+    " . I am " +
+    " " +
+    Object.values(writers)
+      .slice(3, 4)
+      .map(name => name.age) +
+    " " +
+    "years old,and work as a " +
+    " " +
+    Object.values(writers)
+      .slice(3, 4)
+      .map(name => name.occupation) +
+    "."
+);
+
+writers.forEach(element => {
+  console.log(
+    "Hi, my name is" +
+      " " +
+      element.firstName +
+      " " +
+      element.lastName +
+      " " +
+      ". Iam " +
+      " " +
+      element.age +
+      " " +
+      "and I work as" +
+      " " +
+      element.occupation
+  );
+});
 /*
+
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+function isAlive(element) {
+  if (element.alive === true) {
+    return (
+      "I am" +
+      " " +
+      element.firstName +
+      " " +
+      element.lastName +
+      " " +
+      ".Iam" +
+      element.age +
+      " " +
+      "and I work as" +
+      element.occupation
+    );
+  }
+}
+console.log(writers.filter(isAlive).map(isAlive));
