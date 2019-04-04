@@ -1,11 +1,11 @@
 /*
-Only students who have attended enough classes are eligible to sit an exam.
-You have an array named "attendanceCounts"  which contains all the students' names and their attendance counts.
-Produce a new array named "eligibleStudentNames" containing only the NAMES
-of the students who have attended AT LEAST 8 classes.
+  Only students who have attended enough classes are eligible to sit an exam.
+  You have an array named `attendanceCounts`  which contains all the students' names and their attendance counts.
+  Using .filter() and .map(), create a new array named "eligibleStudentNames" containing:
+  - only the NAMES of the students who have attended AT LEAST 8 classes.
 */
 
-var attendances = [
+var attendanceCounts = [
   ["Ahmed", 8],
   ["Clement", 10],
   ["Elamin", 6],
