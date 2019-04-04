@@ -38,7 +38,23 @@ var writers = [
     alive: true
   }
 ];
+var messageAboutWriter = writers
+  .filter(writerAlive => writerAlive.alive)
+  .forEach(writer =>
+    console.log(
+      "Hi, my name is " +
+        writer.firstName +
+        " " +
+        writer.lastName +
+        ". I am " +
+        writer.age +
+        " years old, and work as a " +
+        writer.occupation +
+        "."
+    )
+  );
 
+messageAboutWriter;
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
