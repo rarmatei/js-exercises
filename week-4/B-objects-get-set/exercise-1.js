@@ -7,7 +7,8 @@ var kitten = {
   isFemale: true,
   furColour: "brown"
 };
-
+console.log(kitten);
+console.log("this should be age " + kitten.ageMonths);
 // YOUR CODE GOES BELOW HERE
 
 // YOUR CODE GOES ABOVE HERE
