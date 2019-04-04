@@ -19,7 +19,7 @@ var mentorsAges = {
 
 var mentorsNames = Object.keys(mentorsAges);
 
-var mentorsNamedCapitalised = mentorsNames.toUpperCase();
+var mentorsNamedCapitalised = mentorsNames.map(name => name.toUpperCase());
 
 // ONLY EDIT ABOVE THIS LINE
 
