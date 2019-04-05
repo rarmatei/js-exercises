@@ -38,7 +38,34 @@ var writers = [
     alive: true
   }
 ];
-
+writers.forEach(function(param) {
+  console.log(
+    "Hi, my name is " +
+      param.firstName +
+      param.lastName +
+      ". " +
+      "I am " +
+      param.age +
+      " years old, and work as a " +
+      param.occupation
+  );
+});
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+function aliveWriters() {
+  return writers
+    .filter(name => name.alive == true)
+    .map(
+      param =>
+        "Hi, my name is " +
+        param.firstName +
+        " " +
+        param.lastName +
+        ".I am " +
+        param.age +
+        "  years old, and work as a " +
+        param.occupation +
+        "."
+    );
+}
