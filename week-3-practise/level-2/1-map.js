@@ -1,23 +1,25 @@
 /*
-I am new to London and would like to know what transport I can take to different famous locations.
-An array with London locations have been provided.
-Using .map(), print where I can go if I only want to use the river boat.
-Note: only the names should be printed, not the means of transport.
+  I am new to London and would like to know what transport I can take to different famous locations.
+  An array with London locations have been provided.
+  Using .filter(), .map(), and any other array methods required, create:
+  - a new array of stations with travel by river boat
+  Note: only the names should be printed, not the means of transport.
 */
 
-var londonLocations = [
-  ["Angel", "tube", "bus"],
-  ["London Bridge", "tube", "bus", "river boat"],
-  ["Tower bridge", "tube", "bus"],
-  ["Greenwich", "tube", "bus", "river boat"]
+var stationTransportOptionsPairs = [
+  ["Angel", ["tube", "bus"]],
+  ["London Bridge", ["tube", "bus", "river boat"]],
+  ["Tower bridge", ["tube", "bus"]],
+  ["Greenwich", ["tube", "bus", "river boat"]]
 ];
 function byBoat(name) {
   if (name.includes("river boat"))
     console.log(londonLocations[londonLocations.indexOf(name)][0]);
 }
 
-var locationsByBoat = londonLocations.map(byBoat);
+var stationsWithRiverBoat; // <-- Complete this statement
 
-/* EXPECTED OUTPUT
-["London bridge", "Greenwich"]
-*/
+console.log(stationsWithRiverBoat);
+
+// Expected output:
+// ["London Bridge", "Greenwich"]
