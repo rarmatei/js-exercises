@@ -42,3 +42,23 @@ var writers = [
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+
+for (var x = 0; x < writers.length; x++) {
+  console.log(
+    "Hi, my name is " +
+      writers[x].firstName +
+      " " +
+      writers[x].lastName +
+      " I am " +
+      writers[x].age +
+      " years old, and work as a " +
+      writers[x].occupation
+  );
+}
+
+for (var i = 0; i < writers.length; i++)
+  if (writers[i].alive === true) {
+    console.log(
+      (writers[i].firstName + " " + writers[i].lastName).toUpperCase()
+    );
+  }
