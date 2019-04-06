@@ -44,11 +44,12 @@ Once you retrieve an element using `.querySelector`, you can attach an **event**
 
 ```js
     var myButton = document.querySelector('#myButton');
-    myButton.addEventListener("click", alertSomething);
 
     function alertSomething() {
         alert("Something");
     }
+
+    myButton.addEventListener("click", alertSomething);
 ```
 
 You will notice in the example example that we passed a second argument to `addEventListener`. That second argument is the **function** that we want to invoke when that event has happened.
@@ -81,9 +82,12 @@ To retrieve an array of multiple elements (that match a specific class name for 
 ```js
     //change the background of all the paragraph items on our page
     var paragraphs = document.querySelectorAll('p');
-    for(var i=0; i<paragraphs.length; i++) {
-        paragraphs[i].style.backgroundColor = "blue";
+
+    function setBgBlue(paragraph) {
+        paragraph.style.backgroundColor = "blue";
     }
+
+    paragraphs.forEach(setBgBlue);
 ```
 
 We've learned that `style` and `innerText` are properties of DOM elements. Image tags can also have `width` and `height`.
@@ -102,6 +106,9 @@ To get the text from an Input field:
 ```js
 var updateTitleBtn = document.querySelector('#updateTitleBtn');
 
+// Notice that we declare the function inline
+// Because we are not using the function anywhere else, it does not need a function name
+// This is called an anonymous function
 updateTitleBtn.addEventListener('click', function() {
     var inputBox = document.querySelector('#titleInput');
     var title = inputBox.value;
