@@ -3,6 +3,11 @@
 */
 
 // WRITE CODE BELOW THIS
+var kitten ={
+    name:"Gilbert",
+    size:"big",
+    isItWide:false,
+}
 
 // WRITE CODE ABOVE THIS
 
