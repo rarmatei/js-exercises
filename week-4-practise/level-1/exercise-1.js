@@ -41,4 +41,32 @@ var writers = [
 
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
+
 */
+// var sentence = writers.map(function(writer) {
+//   return (
+//     "Hi, my name is " +
+//     writer.firstName +
+//     " " +
+//     writer.lastName +
+//     ". I am " +
+//     writer.age +
+//     " years old, and work as a " +
+//     writer.occupation
+//   );
+// });
+
+// console.log(sentence);
+
+for (var i = 0; i < writers.length; i++) {
+  console.log(
+    "Hi, my name is " +
+      writers[i].firstName +
+      " " +
+      writers[i].lastName +
+      " I am " +
+      writers[i].age +
+      " years old, and work as a " +
+      writers[i].occupation
+  );
+}

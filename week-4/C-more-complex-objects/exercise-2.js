@@ -18,12 +18,17 @@ var newCurrentOwner = {
   firstName: "Georgina",
   lastName: "Hernandez"
 };
-
 /*
   DO NOT EDIT ANYTHING ABOVE THIS LINE
 
   WRITE YOUR CODE BELOW
 */
+
+house.currentOwner = newCurrentOwner;
+house.previousOwners = ["Claire M.", "Stephen B."];
+// console.log(house.previousOwners.pop());
+// console.log(house.previousOwners.push("Stephen B."));
+house.isForSale = false;
 
 // - assign the value of the variable 'newCurrentOwner' as the value to the house's "currentOwner"
 // - from the list of previous owners, replace only "John A." with "Stephen B."
