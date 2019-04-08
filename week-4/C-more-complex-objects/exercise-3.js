@@ -27,6 +27,7 @@ var parkAvenueHouse = {
 /*
   DO NOT EDIT ANYTHING ABOVE THIS LINE
 
+
   WRITE YOUR CODE BELOW
 */
 
@@ -41,7 +42,7 @@ function getOwnerFullName(house) {
 function getEmailAddresses(house1, house2) {
   var email1 = house1.currentOwner.email;
   var email2 = house2.currentOwner.email;
-  return email1 + ", " + email2;
+  return [email1, email2];
 }
 
 // returns the address for the cheapest house out of the two
