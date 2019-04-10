@@ -15,8 +15,11 @@
   the button is clicked
 */
 document.querySelector("#button1").addEventListener("click", exercise1);
-
+var btn = document.querySelector("#button1");
+var paragraph = document.createElement("p");
+btn.parentElement.appendChild(paragraph);
 function exercise1() {
+  paragraph.innerText = "Youssef  ";
   // Write your implementation here
 }
 
@@ -35,8 +38,9 @@ function exercise1() {
   function caller"
 */
 functionThatCallsBack(exercise2);
-
+var exerciseTwo = document.querySelector("#exercise2");
 function exercise2(result) {
+  exerciseTwo.innerText = "Hello from the function caller";
   // Write your implementation here
 }
 
