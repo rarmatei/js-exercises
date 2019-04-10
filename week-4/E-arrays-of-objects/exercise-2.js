@@ -61,8 +61,8 @@ function DestNameMoreThan300KmsByTrain(destination) {
   }
 }
 var destinationNamesWithin500Kms = travelDestinations
-  .filter(travelDestinationsLessThan500Kms)
-  .map(travelDestinationsLessThan500Kms); // Complete here
+  .filter(destination => destination.distanceKms < 500)
+  .map(place => place.destinationName); // Complete here
 
 var destinationNameReachableByFerry = travelDestinations
   .filter(destinationReachByFerry)
