@@ -9,7 +9,21 @@
 */
 
 // Complete this function -->
-function fizzBuzz() {}
+function fizzBuzz(arr) {
+  return arr
+    .map(function changedNumbers(num) {
+      if (num % 5 === 0 && num % 3 === 0) {
+        return "FizzBuzz";
+      } else if (num % 3 === 0) {
+        return "Fizz";
+      } else if (num % 5 === 0) {
+        return "Buzz";
+      } else {
+        return num;
+      }
+    })
+    .forEach(num => console.log(num));
+}
 
 // DEBUG
 var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

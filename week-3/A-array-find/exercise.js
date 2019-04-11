@@ -5,7 +5,12 @@
 */
 
 // -- Complete this function -->
-function findLongNameThatStartsWithA(names) {}
+function findLongNameThatStartsWithA(names) {
+  return names.find(isLongNameStartingWithA);
+}
+function isLongNameStartingWithA(name) {
+  return name.startsWith("A") && name.length > 7;
+}
 
 // DEBUG (check your function works by calling it with some sample input)
 var names = [
