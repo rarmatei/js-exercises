@@ -4,7 +4,11 @@
 
 var nums = [10, 1, 5, 29, 100];
 var nums2 = [11, 6, 3, 29, 12];
-var sortedNums; // complete this statement
+var arr = nums.concat(nums2);
+function compareNumbers(a, b) {
+  return a - b;
+}
+var sortedNums = arr.sort(compareNumbers); // complete this statement
 
 console.log(sortedNums);
 
