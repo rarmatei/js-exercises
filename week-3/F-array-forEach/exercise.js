@@ -9,10 +9,22 @@
 */
 
 // Complete this function -->
-function fizzBuzz() {}
+function fizzBuzz(number) {
+  number.forEach(function(multiple) {
+    if (multiple % 3 === 0) {
+      return console.log("Fizz");
+    } else if (multiple % 5 === 0) {
+      return console.log("Buzz");
+    } else if (multiple % 5 === 0 && multiple % 3 === 0) {
+      return console.log("FizzBuzz");
+    } else {
+      console.log(multiple);
+    }
+  });
+}
 
 // DEBUG
-var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 fizzBuzz(sequence);
 
 /*

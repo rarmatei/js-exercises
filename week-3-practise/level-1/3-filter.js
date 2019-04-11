@@ -545,7 +545,11 @@ var streetNames = [
   "Wrestler's Court"
 ];
 
-var laneNames; // Complete this line
+function NameContainLane(name) {
+  return name.includes("Lane");
+}
+
+var laneNames = streetNames.filter(NameContainLane); // Complete this line
 
 console.log(laneNames);
 console.log(laneNames.length);

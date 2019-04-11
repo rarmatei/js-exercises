@@ -6,8 +6,12 @@
   - Do not edit any of the other existing code
 */
 
+function IsvalidArray(pairsByIndex) {
+  return Array.IsArray(pairsByIndex) && element.length === 2;
+}
+
 function findPairs(students, mentors, pairsByIndex) {
-  var pairsByIndexFiltered; // <-- Complete this statement
+  var pairsByIndexFiltered = pairsByIndex.filter(IsvalidArray); // <-- Complete this statement
 
   var pairs = pairsByIndexFiltered.map(function(indexes) {
     var student = students[indexes[0]];
