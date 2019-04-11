@@ -6,7 +6,9 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 
 // -- Complete this function -->
-function hasOnlyStudents() {}
+function hasOnlyStudents(name) {
+  return name >= 3;
+}
 
 // DEBUG
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
