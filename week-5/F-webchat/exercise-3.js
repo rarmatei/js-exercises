@@ -30,7 +30,11 @@ Use the above example to get familiar with setInterval function.
 For example, print your name every 2 seconds.
 */
 
-// Write your code here
+// function callback() {
+//     console.log("Nab");
+// }
+
+// setInterval(callback, 2000);
 
 /*
 ========
@@ -40,3 +44,23 @@ Task 4
 Use the setInterval function to reload automatically the messages of your webchat every 2 seconds.
 The code responsible to show the messages in the page is in exercise-1.js, so you will need to write your code there :-)
 */
+
+
+
+// function refereshPage() {
+//     fetch('https://codeyourfuture.herokuapp.com/api/messages').then(function (respond) {
+//         return respond.json(); //this will define that the doc is json(it is no longer a text) to be user in a network(server).
+//     }).then(function (result) {
+//         result.slice(-20).forEach(function (msg) {
+//             var newElement = document.createElement('p');
+//             newElement.innerText = msg.content;
+//             document.getElementById('message-list').appendChild(newElement);
+//         });
+//     });
+// }
+
+
+// setInterval(refereshPage, 2000);
+/** */
+
+
