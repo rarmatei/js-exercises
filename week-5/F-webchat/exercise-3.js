@@ -32,6 +32,12 @@ For example, print your name every 2 seconds.
 
 // Write your code here
 
+function callback() {
+  console.log("Havva");
+}
+
+setInterval(callback, 1000);
+
 /*
 ========
 Task 4
@@ -40,3 +46,4 @@ Task 4
 Use the setInterval function to reload automatically the messages of your webchat every 2 seconds.
 The code responsible to show the messages in the page is in exercise-1.js, so you will need to write your code there :-)
 */
+// I have written the code in exercise-1.js

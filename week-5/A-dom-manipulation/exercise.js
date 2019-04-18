@@ -31,6 +31,14 @@ alertButton.addEventListener("click", thanksForVisit);
 /*
 Task 3
 ======
+My Github
+I have 6 repos on my Github.
+
+Use AJAX to load your repos from your Github and show them on this page.
+
+    Js-exercises
+
+
 
 When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
 */
@@ -41,6 +49,10 @@ function addNewParagraph() {
   newParagraph.innerText = "Read more below."; //give value to element
 }
 var addSomeText = document.querySelector("#addTextBtn");
+/*
+Task 3
+======
+
 addSomeText.addEventListener("click", addNewParagraph);
 /*
 Task 4

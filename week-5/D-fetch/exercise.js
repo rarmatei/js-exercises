@@ -23,6 +23,10 @@ fetch("https://codeyourfuture.herokuapp.com/api/greetings")
   })
   .then(function(greeting) {
     // Write the code to display the greeting text here
+<<<<<<< Updated upstream
     var newGreeting = document.querySelector("#greeting-text");
     newGreeting.innerText = greeting;
+=======
+    document.querySelector('#greeting-text').innerHTML = greeting;
+>>>>>>> Stashed changes
   });
