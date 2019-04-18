@@ -7,12 +7,24 @@
 
   An array with numbers 1-15 has been provided for debugging.
 */
+// eturn sequence2.splice(sequence2.indexOf(num), 1, "fuzz")}
 
 // Complete this function -->
-function fizzBuzz() {}
+function changeNumbersToFuzzBuzz(num) {
+  if (num % 3 == 0 && num % 5 == 0) {
+    console.log("FizzBuzz");
+  } else if (num % 3 === 0) {
+    console.log("Fizz");
+  } else if (num % 5 === 0) {
+    console.log("Buzz");
+  } else console.log(num);
+}
 
+function fizzBuzz(array) {
+  return array.forEach(changeNumbersToFuzzBuzz);
+}
 // DEBUG
-var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 fizzBuzz(sequence);
 
 /*

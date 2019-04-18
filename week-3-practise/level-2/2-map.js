@@ -13,9 +13,15 @@ var attendanceCounts = [
   ["Tayoa", 11],
   ["Nina", 10]
 ];
+function attendedMoreThan8(pair) {
+  return pair[1] >= 8;
+}
+var attendedList = attendances.filter(attendedMoreThan8);
 
-var eligibleStudentNames; // TODO: Complete this line.
-
+function nameFromPair(name) {
+  return name[0];
+}
+var eligibleStudentNames = attendedList.map(nameFromPair); // TODO: Complete this line.
 console.log(eligibleStudentNames);
 
 /* expected output

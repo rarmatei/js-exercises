@@ -18,6 +18,12 @@ var house = {
 
   WRITE YOUR CODE BELOW
 */
+house.address = "51 Barkely Road";
+// house.previousOwners[0] = "Brian M."
+// house.previousOwners[1] = "Fiona S.";
+// house.previousOwners.splice(0, 2, "Brian M.", "Fiona S.");
+house.previousOwners = ["Brian M.", " Fiona S."];
+house.currentOwner.lastName = "Montgomery";
 
 // - change the address of "house" to '51 Berkley Road'
 // - change the previous owners of "house" to ["Brian M.", "Fiona S."]

@@ -39,6 +39,26 @@ var writers = [
   }
 ];
 
-/*
-If you want an extra challenge, only `console.log()` the writers that are alive.
-*/
+function message(information) {
+  console.log(
+    "Hi, my name is " +
+      information.firstName +
+      " " +
+      information.lastName +
+      " " +
+      information.lastName +
+      ".I am " +
+      information.age +
+      "  years old, and work as a " +
+      information.occupation +
+      "."
+  );
+}
+writers.map(message);
+console.log(" writers that are alive.!!!");
+
+function alive(writer) {
+  if (writer.alive === true) return true;
+}
+var writersAlive = writers.filter(alive);
+writersAlive.map(message);
