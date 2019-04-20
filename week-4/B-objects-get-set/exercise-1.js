@@ -11,3 +11,5 @@ var kitten = {
 // YOUR CODE GOES BELOW HERE
 
 // YOUR CODE GOES ABOVE HERE
+console.log(kitten);
+console.log(kitten.ageMonths);

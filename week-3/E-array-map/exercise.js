@@ -4,7 +4,24 @@
 */
 
 // Complete this function -->
-function multiplyBy100(numbers) {}
+function multiplyBy100(numbers) {
+  return numbers.map(number => number * 100);
+}
+function multiplyBy100(numbers) {
+  return numbers.map(function times100(number) {
+    return number * 100;
+  });
+}
+function multiplyBy100(numbers) {
+  return numbers.map(function(number) {
+    return number * 100;
+  });
+}
+function multiplyBy100(numbers) {
+  return numbers.map(number => {
+    return number * 100;
+  });
+}
 
 // DEBUG
 // Debug your function by
@@ -12,3 +29,4 @@ function multiplyBy100(numbers) {}
 // - logging the output to the console
 
 module.exports = { multiplyBy100 };
+// This exercise i couldn't run and see the result on terminal

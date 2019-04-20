@@ -5,9 +5,20 @@
   - Finish the statement on line 10 to produce an array with valid content
   - Do not edit any of the other existing code
 */
-
+function isNotPair(item) {
+  if (item === null) {
+    return false;
+  }
+  if (typeof item === "string") {
+    return false;
+  }
+  if (item === false) {
+    return false;
+  }
+  return true;
+}
 function findPairs(students, mentors, pairsByIndex) {
-  var pairsByIndexFiltered; // <-- Complete this statement
+  var pairsByIndexFiltered = pairsByIndex.filter(isNotPair);
 
   var pairs = pairsByIndexFiltered.map(function(indexes) {
     var student = students[indexes[0]];
