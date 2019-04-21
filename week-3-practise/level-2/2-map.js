@@ -14,7 +14,14 @@ var attendanceCounts = [
   ["Nina", 10]
 ];
 
-var eligibleStudentNames; // TODO: Complete this line.
+function studentWhoAttendedAtLeast8Classes(attendance){
+  return attendance[1] >= 8;
+}
+
+function studentName(student){
+  return student[0];
+}
+var eligibleStudentNames = attendanceCounts.filter(studentWhoAttendedAtLeast8Classes).map(studentName); // TODO: Complete this line.
 
 console.log(eligibleStudentNames);
 

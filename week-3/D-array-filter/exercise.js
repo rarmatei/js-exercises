@@ -5,9 +5,30 @@
   - Finish the statement on line 10 to produce an array with valid content
   - Do not edit any of the other existing code
 */
+function valuesBreaksYourCode(element) {
+  return (
+    Array.isArray(element) &&
+    element.length === 2 &&
+    element !== null &&
+    element !== false &&
+    typeof element !== String
+  );
+  // if (!Array.isArray(element) && element.length !== 2) {
+  //   return false ;
+  // }
+  // if (element === null) {
+  //   return false;
+  // }
+  // if (element === false) {
+  //   return false;
+  // }
+  // if (typeof element === String) {
+  //   return false;
+  // }
+}
 
 function findPairs(students, mentors, pairsByIndex) {
-  var pairsByIndexFiltered; // <-- Complete this statement
+  var pairsByIndexFiltered = pairsByIndex.filter(valuesBreaksYourCode); // <-- Complete this statement
 
   var pairs = pairsByIndexFiltered.map(function(indexes) {
     var student = students[indexes[0]];
@@ -27,4 +48,6 @@ const pairs = findPairs(students, mentors, pairsByIndex);
 
 console.log(pairs);
 
-module.exports = { findPairs };
+module.exports = {
+  findPairs
+};
