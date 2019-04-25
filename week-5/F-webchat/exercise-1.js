@@ -34,3 +34,22 @@ When you open index.html in your browser, it should display the existing message
 */
 
 // Write your code here
+var messenger = document.querySelector("#message-list");
+messenger.style.backgroundColor = "#A9D6D6";
+messenger.style.marginLeft = "15px";
+function displayMsgs() {
+  fetch("https://codeyourfuture.herokuapp.com/api/messages")
+    .then(showOldMessages => showOldMessages.json())
+    .then(function(result) {
+      messenger.innerHTML = "";
+      result.forEach(function(message) {
+        var messageContainer = document.createElement("p");
+        messageContainer.style.color = "#d04071E";
+        messageContainer.style.marginLeft = " 15px";
+        messenger.appendChild(messageContainer);
+        messageContainer.innerHTML = message.content;
+      });
+    });
+}
+var intervalID = window.setInterval(displayMsgs, 2000);
+//

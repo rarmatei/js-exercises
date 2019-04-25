@@ -31,6 +31,7 @@ For example, print your name every 2 seconds.
 */
 
 // Write your code here
+// Print "Hello" every 1 second
 
 /*
 ========
