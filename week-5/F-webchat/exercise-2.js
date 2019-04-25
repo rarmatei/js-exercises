@@ -38,7 +38,7 @@ function sendingNewMessage() {
       "content-type": "application/json"
     }
   };
-  newMessage.value.reset();
+  newMessage.value = "";
   fetch(
     "https://codeyourfuture.herokuapp.com/api/messages",
     postRequestParameters
