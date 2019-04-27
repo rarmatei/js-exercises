@@ -29,9 +29,22 @@ Task 3
 Use the above example to get familiar with setInterval function.
 For example, print your name every 2 seconds.
 */
-
+var url = "https://codeyourfuture.herokuapp.com/api/messages"
 // Write your code here
+setInterval(function() {
+    var messagesList = document.getElementById("message-list");
+    fetch(url)
+    .then(function(response) {
+         return response.json()
+    }).then(function(response) {
+        response.forEach(function (element){
+var newParagraph = document.createElement("p");
+newParagraph.innerText = element.content;
+messagesList.appendChild(newParagraph);
+        })
+    })
 
+},2000)
 /*
 ========
 Task 4
