@@ -59,7 +59,6 @@ var destinationNamesMoreThan300KmsAwayByTrain = travelDestinations
   )
   .map(destination => destination.destinationName); // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
 
-destinationNamesMoreThan300KmsAwayByTrain;
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
 */

@@ -54,7 +54,6 @@ var messageAboutWriter = writers
     )
   );
 
-messageAboutWriter;
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */

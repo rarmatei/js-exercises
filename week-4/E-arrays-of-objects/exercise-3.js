@@ -51,7 +51,7 @@ var restaurants = [restaurant1, restaurant2, restaurant3];
 
 /*
 DO NOT EDIT ANYTHING ABOVE THIS LINE
-WRITE YOUR CODE BELOW
+
 */
 
 var restaurantFinderApplication = {
@@ -68,18 +68,15 @@ var restaurantFinderApplication = {
           0
       )
       .map(restaurant => restaurant.name);
-    // Complete here
   },
   findRestaurantServingDish: function(dishName) {
     return restaurants
       .filter(restaurant => restaurant.menu.includes(dishName))
       .map(restaurant => restaurant.name);
-    // Complete here
   },
   countNumberOfRestaurantsInArea: function(area) {
     return restaurants.filter(restaurant => restaurant.address.area === area)
       .length;
-    // Complete here
   }
 };
 
