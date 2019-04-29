@@ -51,7 +51,7 @@ var restaurants = [restaurant1, restaurant2, restaurant3];
 
 /*
 DO NOT EDIT ANYTHING ABOVE THIS LINE
-WRITE YOUR CODE BELOW
+
 */
 
 var restaurantFinderApplication = {
@@ -59,13 +59,24 @@ var restaurantFinderApplication = {
   applicationVersion: "1.0",
   restaurants: restaurants,
   findAvailableRestaurants: function(numberOfPeople) {
-    // Complete here
+    return restaurants
+      .filter(
+        restaurant =>
+          restaurant.totalSeats -
+            restaurant.numberOfCustomers -
+            numberOfPeople >=
+          0
+      )
+      .map(restaurant => restaurant.name);
   },
   findRestaurantServingDish: function(dishName) {
-    // Complete here
+    return restaurants
+      .filter(restaurant => restaurant.menu.includes(dishName))
+      .map(restaurant => restaurant.name);
   },
   countNumberOfRestaurantsInArea: function(area) {
-    // Complete here
+    return restaurants.filter(restaurant => restaurant.address.area === area)
+      .length;
   }
 };
 
