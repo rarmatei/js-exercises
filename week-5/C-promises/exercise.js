@@ -15,6 +15,9 @@
 */
 function exercise1() {
   var promise1 = resolvedPromise();
+  promise1.then(message => {
+    document.querySelector("#exercise1").textContent = message;
+  });
 }
 
 /*
@@ -28,6 +31,9 @@ function exercise1() {
 */
 function exercise2() {
   var promise2 = rejectedPromise();
+  promise2.catch(message => {
+    document.querySelector("#exercise2").textContent = message;
+  });
 }
 
 /*
@@ -41,6 +47,9 @@ function exercise2() {
 */
 function exercise3() {
   var promise3 = delayedPromise();
+  promise3.then(message => {
+    document.querySelector("#exercise3").textContent = message;
+  });
 }
 
 /*
@@ -56,6 +65,9 @@ function exercise3() {
 */
 function exercise4() {
   var promise4 = concatPromise();
+  promise4.then(message => {
+    document.querySelector("#exercise4").textContent = message + "Vicky";
+  });
 }
 
 /*
@@ -72,7 +84,10 @@ function exercise4() {
 */
 
 function exercise5() {
-  // Write your implementation here
+  var p = Promise.resolve("Hello Promises!");
+  p.then(
+    message => (document.querySelector("#exercise5").textContent = message)
+  );
 }
 
 /*
@@ -89,6 +104,10 @@ function exercise5() {
   wrong!"
 */
 function exercise6() {
+  var p = Promise.reject("Something went wrong!");
+  p.catch(
+    message => (document.querySelector("#exercise6").textContent = message)
+  );
   // Write your implementation here
 }
 
