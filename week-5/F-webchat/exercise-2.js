@@ -26,3 +26,39 @@ on the submit button. Then check the following:
 */
 
 // Write your code here
+
+var messageInput = document.querySelector("#message-input");
+var submit = document.querySelector("#submit");
+
+var message = document.querySelector("#message-list");
+
+function getMessage() {
+  var requestBody = { content: messageInput.value };
+  var postRequestParameters = {
+    body: JSON.stringify(requestBody),
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    }
+  };
+  fetch(
+    "https://codeyourfuture.herokuapp.com/api/messages",
+    postRequestParameters
+  );
+
+  // fetch("https://codeyourfuture.herokuapp.com/api/messages")
+  //   .then(function(response) {
+  //     return response.text();
+  //   })
+  //   .then(function getResult(result) {
+  //     messageInput.value = "";
+  //     var paragraph = document.createElement("p");
+  //     message.appendChild(paragraph);
+  //     paragraph.innerText = result;
+  //   });
+}
+// setInterval(getResult, 1000);
+
+submit.addEventListener("click", getMessage);
+
+// Write your code here
