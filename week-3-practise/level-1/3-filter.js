@@ -545,7 +545,11 @@ var streetNames = [
   "Wrestler's Court"
 ];
 
-var laneNames; // Complete this line
+function nameOfStreet ( name) {
+  return name === "lane" ;
+}
+
+var laneNames = streetNames.filter(nameOfStreet);
 
 console.log(laneNames);
 console.log(laneNames.length);

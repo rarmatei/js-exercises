@@ -9,10 +9,23 @@
 */
 
 // Complete this function -->
-function fizzBuzz() {}
+function fizzBuzz(sequence) {
+  sequence.forEach(element => {
+    if (( element%15) ===0) {
+      console.log("FizzBuzz");
+    }
+    else if ((element % 3) === 0){
+       console.log("Fizz");
+    }
+    else if ((element % 5 ) === 0){
+       console.log("Buzz");
+    
+    } else console.log( element);
+  });
+}
 
 // DEBUG
-var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 fizzBuzz(sequence);
 
 /*
