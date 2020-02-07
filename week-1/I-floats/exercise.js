@@ -1,2 +1,10 @@
 var numberOfStudents = 15;
 var numberOfMentors = 8;
+var percentageOfStudentsMsg = "Percentage of students:";
+var percentageOfStudents = (15 / 23) * 100;
+var roughpercentage = Math.round(percentageOfStudents);
+var percentageOfmentors = (8 / 23) * 100;
+var percentageOfMentorsMsg = "Percentage of mentors:";
+var roughpercentage2 = Math.round(percentageOfmentors);
+console.log(percentageOfStudentsMsg, roughpercentage, "%");
+console.log(percentageOfMentorsMsg, roughpercentage2, "%");
